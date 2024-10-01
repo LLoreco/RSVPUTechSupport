@@ -1,0 +1,167 @@
+﻿@page "/weather"
+@using BlazorApp.Components.Data
+@using BlazorApp.Components.Model
+@using BlazorApp.Components.PageActions
+@using BlazorApp.Components.Services
+@inherits OwningComponentBase<WorkService>
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Список Задач</PageTitle>
+
+<div style="text-align:center">
+    <h3>Список Работ</h3>
+    <hr />
+    <button class="btn btn-primary" @onclick="ShowPopup">Click me</button>
+    @if (popup)
+    {
+        <div class="modal" tabindex="-1" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Таблица работника</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="ClosePopup"></button>
+                    </div>
+                    <EditForm Model = "workObject" OnInvalidSubmit="InsertRecord">
+                        <div class="modal-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Номер работы</td>
+                                    <td><input type="text" placeholder="Введите фамилию" @bind="workObject.work_number"/></td>
+                                </tr>
+                                <tr>
+                                    <td>От кого</td>
+                                    <td><input type="text" placeholder="Введите id" @bind="workObject.from_whom_id"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Описание</td>
+                                    <td><input type="text" placeholder="Введите Описание" @bind="workObject.description"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Время отправки</td>
+                                    <td><input type="text" placeholder="Введите роль" @bind="workObject.send_time"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Дедлайн</td>
+                                    <td><input type="text" placeholder="Введите почту" @bind="workObject.time_limit"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Затраченное время</td>
+                                    <td><input type="text" placeholder="Введите телефон" @bind="workObject.total_time"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Cтатус</td>
+                                    <td><input type="text" placeholder="Введите телефон" @bind="workObject.status"/></td>
+                                </tr>
+                                <tr>
+                                    <td>id работника</td>
+                                    <td><input type="text" placeholder="Введите ставку" @bind="workObject.employee_id"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Имя работника</td>
+                                    <td><input type="text" placeholder="@Service.FindEmployee(workObject.employee_id)" readonly="true" @bind="workObject.image" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" @onclick="InsertRecord">Save</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    }
+    <table class="table">
+        <tr>
+            <th>id</th>
+            <th>Номер работы</th>
+            <th>От кого</th>
+            <th>Описание</th>
+            <th>Время отправки</th>
+            <th>Дедлайн</th>
+            <th>Затраченное время</th>
+            <th>Статус</th>
+            <th>id работника</th>
+            <th>Имя работника</th>
+        </tr>
+        @foreach (var item in workDataList)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.workNumber</td>
+                <td>@GetFromWhomId(item.fromWhomName, "1")</td>
+                <td>@item.description</td>
+                <td>@item.sendTime</td>
+                <td>@item.timeLimit</td>
+                <td>@item.totalTime</td>
+                <td>@item.status</td>
+                <td>@item.employeeId</td>
+                <td>@item.employeeName</td>
+                <td class="btn-primary" @onclick="(()=>GetWorkDetails(item))">Edit</td>
+                <td class="btn-danger" @onclick="(()=>DeleteWork(item))">Delete</td>
+            </tr>
+        }
+    </table>
+</div>
+@code {
+    private WorkDataModel workDataModel = new WorkDataModel();
+    private List<WorkDataModel> workDataList;
+    IList<Work> workList;
+
+    private bool popup = false;
+    Work workObject = new Work();
+
+    WorkPageAction workPageAction = new WorkPageAction(new WorkMapper());
+
+    private void ShowPopup()
+    {
+        workObject = new Work();
+        popup = true;
+    }
+    void ClosePopup()
+    {
+        popup = false;
+    }
+    protected override void OnInitialized()
+    {
+        workDataList = workPageAction.OnInitializedWorkPageAction(Service, workDataList);
+    }
+    void InsertRecord()
+    {
+        workDataList = workPageAction.InsertRecordWorkPageAction(workObject, Service, workDataModel, workDataList, workList);
+        popup = false;
+    }
+    void GetWorkDetails(WorkDataModel workEdit)
+    {
+        workObject = workPageAction.GetWorkDataModelPageAction(workList, Service, workEdit, workObject, workDataList);
+        popup = true;
+    }
+    void DeleteWork(WorkDataModel workDelete)
+    {
+        workDataList = workPageAction.DeleteWorkPageAction(Service, workDelete, workList, workDataList);
+    }
+    string CheckEmployee(int id)
+    {
+        if (id != null)
+        {
+            var name = Service.FindEmployee(id);
+            if (name != null)
+            {
+                return name;
+            }
+            else
+            {
+                return "ОШИБКА";
+            }
+        }
+        else
+        {
+            return "";
+        }
+    }
+    string GetFromWhomId(int id, string fromWhom = null)
+    {
+        var name = Service.FindEmployee(id, fromWhom);
+        return name;
+    }
+}

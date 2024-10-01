@@ -1,0 +1,168 @@
+﻿@page "/"
+@using BlazorApp.Components.Data
+@using BlazorApp.Components.Model
+@using BlazorApp.Components.PageActions
+@using BlazorApp.Components.Services
+@inherits OwningComponentBase<EmployeeService>
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Список работников</PageTitle>
+
+<div style="text-align:center">
+    <h3>Список работников</h3>
+    <hr />
+    <button class="btn btn-primary" @onclick="ShowPopup">Click me</button>
+    @if (popup)
+    {
+        <div class="modal" tabindex="-1" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Таблица работника</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="ClosePopup"></button>
+                    </div>
+                    <EditForm Model = "employeeObject" OnInvalidSubmit="InsertRecord">
+                        <div class="modal-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Имя</td>
+                                    <td><input type="text" placeholder="Введите имя" @bind="employeeObject.first_name"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Фамилия</td>
+                                    <td><input type="text" placeholder="Введите фамилию" @bind="employeeObject.last_name"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Отчество</td>
+                                    <td><input type="text" placeholder="Введите Отвество" @bind="employeeObject.middle_name"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Подразделение</td>
+                                    <td><input type="text" placeholder="Введите Подразделение" @bind="employeeObject.division"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Роль</td>
+                                    <td><input type="text" placeholder="Введите роль" @bind="employeeObject.role"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Электронную почту</td>
+                                    <td><input type="text" placeholder="Введите почту" @bind="employeeObject.email"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Номер телефона</td>
+                                    <td><input type="text" placeholder="Введите телефон" @bind="employeeObject.phone"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Кол-во выполненной работы</td>
+                                    <td><input type="text" placeholder="Введите количество выполненной работы" @bind="employeeObject.work_amount"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Ставка</td>
+                                    <td><input type="text" placeholder="Введите ставку" @bind="employeeObject.salary"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Cтатус</td>
+                                    <td><input type="checkbox" @bind="employeeObject.status"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Логин</td>
+                                    <td><input type="text" placeholder="Введите пароль" @bind="employeeObject.login" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Пароль</td>
+                                    <td><input type="text" placeholder="Введите пароль" @bind="employeeObject.password" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" @onclick="InsertRecord">Save</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    }
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Подразделение</th>
+            <th>Роль</th>
+            <th>Эл.почта</th>
+            <th>Телефон</th>
+            <th>Выполнено работ</th>
+            <th>Ставка</th>
+            <th>Статус</th>
+            <th>Логин</th>
+            <th>Пароль</th>
+        </tr>
+        @foreach (var item in employeeDataList)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.fullName</td>
+                <td>@item.division</td>
+                <td>@item.role</td>
+                <td>@item.email</td>
+                <td>@item.phone</td>
+                <td>@item.work_amount</td>
+                <td>@item.salary</td>
+                <td>@CheckStatus(item.status)</td>
+                <td>@item.login</td>
+                <td>@item.password</td>
+                <td class="btn-primary" @onclick="(()=>GetEmployeeDetails(item))">Edit</td>
+                <td class="btn-danger" @onclick="(()=>DeleteEmployee(item))">Delete</td>
+            </tr>
+        }
+    </table>
+</div>
+@code {
+    private EmployeeDataModel employeeDataModel = new EmployeeDataModel();
+    private List<EmployeeDataModel> employeeDataList;
+    IList<Employee> employeeList;
+
+    private bool popup = false;
+    Employee employeeObject = new Employee();
+
+    EmployeePageAction employeePageAction = new EmployeePageAction(new EmployeeMapper());
+    private void ShowPopup()
+    {
+        employeeObject = new Employee();
+        popup = true;
+    }
+    void ClosePopup()
+    {
+        popup = false;
+    }
+
+    protected override void OnInitialized()
+    {
+        employeeDataList = employeePageAction.OnInitializedEmployeePageAction(Service, employeeDataList);
+    }
+    void InsertRecord()
+    {
+        employeeDataList = employeePageAction.InsertRecordEmployeePageAction(employeeObject, Service, employeeDataList, employeeList);
+        popup = false;
+    }
+    void GetEmployeeDetails(EmployeeDataModel employeeEdit)
+    {
+        employeeObject = employeePageAction.GetEmployeeDetailsEmployeePageAction(employeeList, Service, employeeEdit, employeeObject, employeeDataList);
+        popup = true;
+    }
+    void DeleteEmployee(EmployeeDataModel employeeDelete)
+    {
+        employeeDataList = employeePageAction.DeleteEmployee(Service, employeeDelete, employeeList, employeeDataList);
+    }
+    string CheckStatus(bool status)
+    {
+        if (status)
+        {
+            return "Занят";
+        }
+        else
+        {
+            return "Свободен";
+        }
+    }
+}

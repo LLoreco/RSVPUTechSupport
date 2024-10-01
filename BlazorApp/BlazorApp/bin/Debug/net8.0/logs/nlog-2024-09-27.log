@@ -1,0 +1,1047 @@
+2024-09-27 23:58:41.5268 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\safin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-27 23:58:41.5918 Microsoft.Extensions.Hosting.Internal.Host Hosting starting
+2024-09-27 23:58:41.5918 Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\safin\AppData\Local\ASP.NET\DataProtection-Keys\key-7b9d81eb-5408-4e3e-8f1c-4476770cd15d.xml'.
+2024-09-27 23:58:41.6313 Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\safin\AppData\Local\ASP.NET\DataProtection-Keys\key-bebb7c80-9486-440b-be35-1c002d261ff0.xml'.
+2024-09-27 23:58:41.6992 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {7b9d81eb-5408-4e3e-8f1c-4476770cd15d}.
+2024-09-27 23:58:41.7061 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {bebb7c80-9486-440b-be35-1c002d261ff0}.
+2024-09-27 23:58:41.7424 Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver Considering key {bebb7c80-9486-440b-be35-1c002d261ff0} with expiration date 2024-12-16 07:47:56Z as default key.
+2024-09-27 23:58:41.7503 Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-27 23:58:41.7503 Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor Decrypting secret element using Windows DPAPI.
+2024-09-27 23:58:41.7503 Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-27 23:58:41.7503 Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-09-27 23:58:41.7617 Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-09-27 23:58:41.7617 Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider Using key {bebb7c80-9486-440b-be35-1c002d261ff0} as the default key.
+2024-09-27 23:58:41.7617 Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService Key ring with default key {bebb7c80-9486-440b-be35-1c002d261ff0} was loaded during application startup.
+2024-09-27 23:58:41.8465 Microsoft.AspNetCore.SignalR.Internal.DefaultHubProtocolResolver Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2024-09-27 23:58:41.8465 Microsoft.AspNetCore.SignalR.Internal.DefaultHubProtocolResolver Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2024-09-27 23:58:42.0123 Microsoft.Hosting.Lifetime Now listening on: http://localhost:5166
+2024-09-27 23:58:42.0123 Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly BlazorApp
+2024-09-27 23:58:42.0123 Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-27 23:58:42.0123 Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-27 23:58:42.0123 Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-27 23:58:42.0123 Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-27 23:58:42.0469 Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2024-09-27 23:58:42.0469 Microsoft.Hosting.Lifetime Hosting environment: Development
+2024-09-27 23:58:42.0469 Microsoft.Hosting.Lifetime Content root path: D:\BlazorExample\BlazorApp\BlazorApp
+2024-09-27 23:58:42.0469 Microsoft.Extensions.Hosting.Internal.Host Hosting started
+2024-09-27 23:58:42.2245 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM1" accepted.
+2024-09-27 23:58:42.2245 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM1" started.
+2024-09-27 23:58:42.2316 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM2" accepted.
+2024-09-27 23:58:42.2316 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM2" started.
+2024-09-27 23:58:42.4655 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM3" accepted.
+2024-09-27 23:58:42.4655 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM3" started.
+2024-09-27 23:58:42.4655 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM4" accepted.
+2024-09-27 23:58:42.4655 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM4" started.
+2024-09-27 23:58:42.5082 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/ - - -
+2024-09-27 23:58:42.6699 Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware Wildcard detected, all requests with hosts will be allowed.
+2024-09-27 23:58:42.6939 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/'
+2024-09-27 23:58:42.6939 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '/ (/)'
+2024-09-27 23:58:42.6939 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:42.7007 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint '/ (/)'
+2024-09-27 23:58:42.7268 Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker Begin render root component 'App' with page 'Home'.
+2024-09-27 23:58:42.7387 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 0 (BlazorApp.Components.App)
+2024-09-27 23:58:42.7387 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 2 (BlazorApp.Components.Routes) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:42.7511 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (BlazorApp.Components.Routes)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.Routing.Router Navigating to component BlazorApp.Components.Pages.Home in response to path '/' with base URI 'http://localhost:5166/'
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 11 (BlazorApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2024-09-27 23:58:42.7626 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 12 (BlazorApp.Components.Layout.NavMenu) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:42.7825 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:42.8061 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 17 (BlazorApp.Components.Pages.Home) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2024-09-27 23:58:44.0311 Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-27 23:58:44.7971 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:44.8147 Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Employee>()'
+2024-09-27 23:58:45.0238 Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.division (string) Required, 1], [Property: Employee.email (string) Required, 2], [Property: Employee.first_name (string) Required, 3], [Property: Employee.last_name (string) Required, 4], [Property: Employee.middle_name (string) Required, 5], [Property: Employee.password (string) Required, 6], [Property: Employee.phone (long) Required, 7], [Property: Employee.role (string) Required, 8], [Property: Employee.salary (int) Required, 9], [Property: Employee.status (bool) Required, 10], [Property: Employee.work_amount (int) Required, 11] }
+        SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+        FROM public.employees AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    BlazorApp.Components.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-09-27 23:58:45.0529 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:45.1048 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (50ms).
+2024-09-27 23:58:45.1083 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:45.3953 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:45.3953 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:45.3953 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (3ms).
+2024-09-27 23:58:45.3953 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (5ms).
+2024-09-27 23:58:45.4075 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:45.4321 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:45.5050 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:45.5378 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:45.5473 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 111ms reading results.
+2024-09-27 23:58:45.5473 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:45.5473 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (3ms).
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 17 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:45.5473 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:45.5600 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:45.5600 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:45.5600 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:45.5941 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM4" received FIN.
+2024-09-27 23:58:45.5941 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:45.5941 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM4" disconnecting.
+2024-09-27 23:58:45.5941 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM4" stopped.
+2024-09-27 23:58:45.6229 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:45.6229 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint '/ (/)'
+2024-09-27 23:58:45.6368 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM3" completed keep alive response.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM3" received FIN.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM3" disconnecting.
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 17 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:45.6368 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:58:45.6368 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:45.6368 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/ - 200 - text/html;+charset=utf-8 3146.5526ms
+2024-09-27 23:58:45.6368 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM3" stopped.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM5" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM5" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM6" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM6" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM7" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM7" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM8" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM8" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM9" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM9" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" accepted.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" started.
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/_framework/aspnetcore-browser-refresh.js - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/app.css - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/BlazorApp.styles.css - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/bootstrap/bootstrap.min.css - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/_framework/blazor.web.js - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/_vs/browserLink - - -
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/_framework/blazor.web.js'
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.Matching.DfaMatcher No candidates found for the request path '/BlazorApp.styles.css'
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.Matching.DfaMatcher No candidates found for the request path '/app.css'
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.Matching.DfaMatcher No candidates found for the request path '/bootstrap/bootstrap.min.css'
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'Blazor web static files'
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request did not match any endpoints
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request did not match any endpoints
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request did not match any endpoints
+2024-09-27 23:58:47.6624 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM8" completed keep alive response.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'Blazor web static files'
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript;+charset=utf-8 2.4677ms
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file /_framework/blazor.web.js was not modified
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file /bootstrap/bootstrap.min.css was not modified
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file /BlazorApp.styles.css was not modified
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The file /app.css was not modified
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: /_framework/blazor.web.js
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: /bootstrap/bootstrap.min.css
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: /app.css
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Handled. Status code: 304 File: /BlazorApp.styles.css
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM5" completed keep alive response.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM6" completed keep alive response.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'Blazor web static files'
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM9" completed keep alive response.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM7" completed keep alive response.
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/BlazorApp.styles.css - 304 - text/css 7.3328ms
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/bootstrap/bootstrap.min.css - 304 - text/css 7.4290ms
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/app.css - 304 - text/css 7.2820ms
+2024-09-27 23:58:47.6684 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/_framework/blazor.web.js - 304 - text/javascript 7.1534ms
+2024-09-27 23:58:47.7088 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" completed keep alive response.
+2024-09-27 23:58:47.7088 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.2997ms
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/_blazor/initializers - - -
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/_blazor/initializers'
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '(null)'
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" completed keep alive response.
+2024-09-27 23:58:47.7374 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/_blazor/initializers - 200 - application/json;+charset=utf-8 4.1125ms
+2024-09-27 23:58:47.8857 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5166/_blazor/negotiate?negotiateVersion=1 - - 0
+2024-09-27 23:58:47.8883 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/_blazor/negotiate'
+2024-09-27 23:58:47.8883 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '(null)'
+2024-09-27 23:58:47.8883 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:47.8883 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-09-27 23:58:47.8883 Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager New connection CL8wuy9lUk2oGqi7q5HzHA created.
+2024-09-27 23:58:47.9035 Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher Sending negotiation response.
+2024-09-27 23:58:47.9035 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-09-27 23:58:47.9035 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" completed keep alive response.
+2024-09-27 23:58:47.9035 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5166/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 18.5183ms
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMB" accepted.
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMB" started.
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/_blazor?id=n3NZ6KcYgDB96OrOOphC2w - - -
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/_blazor'
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '(null)'
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher Establishing new connection.
+2024-09-27 23:58:47.9230 Microsoft.AspNetCore.SignalR.HubConnectionHandler OnConnectedAsync started.
+2024-09-27 23:58:47.9339 Microsoft.AspNetCore.Http.Connections.Internal.Transports.WebSocketsTransport Socket opened using Sub-Protocol: '(null)'.
+2024-09-27 23:58:47.9339 Microsoft.AspNetCore.SignalR.Internal.DefaultHubProtocolResolver Found protocol implementation for requested protocol: blazorpack.
+2024-09-27 23:58:47.9339 Microsoft.AspNetCore.SignalR.HubConnectionContext Completed connection handshake. Using HubProtocol 'blazorpack'.
+2024-09-27 23:58:47.9521 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "0", Target: "StartCircuit", Arguments: [ http://localhost:5166/, http://localhost:5166/, [], CfDJ8IB8u76GlAtEvjUcAC0mH/Cdu2rw2noh02iSOMyVkioBg/dMoOa28DDOMnVF05E1jWrem/SevhxkCLNXacL8g1Uqgi8jvu4CykWtM3/dnhHfpoclcLZb636bdHeq+unlG3AsyGmIT/Knxh8/Ct7FyCaocriQRXTT0hvl0tPL2y55MrWKruZ+SUwI+Ubl4RAzDcCp1bWqOH6tl4qUvpQ+LP59MYFWvYmlNdwUKo2lOhNy/Tnp2YIKtwcQNdZPclQAzHkeiVPygtAUbF//0NeQgSihkh/PRLpeWgIJghPQRAlbqJix+C0Anj2sZK88pQBmflVLdYeKIeggrqLJeWlA+Tj+OhLZHN76z2iHz0I7ZjRTqw3wWs99VHmbWOpOZVb15hi27UjEyMxzHpoVjSRxQE/d+zqaTy8c4k0EHJv4CbMw6JVOzKAtk8S8beU26UOo/IwSiqIugWnuQqUEC2eaLqp1fDBmyacSgQST5TQW6diuLFz85vDaX5Zo+hEK4ZX0OjqcZfjUJrg7+j+Gtsy5d9CbenHumtnisQ9Tc59dr0c3 ], StreamIds: [  ] }.
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime Begin invoke JS interop '2': 'Blazor._internal.attachWebRendererInterop'
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.Circuits.CircuitFactory Created circuit 1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg for connection CL8wuy9lUk2oGqi7q5HzHA
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Circuit initialization started.
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Circuit initialization succeeded.
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.ComponentHub Created circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg' with secret '(redacted)' for 'CL8wuy9lUk2oGqi7q5HzHA'
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "EndInvokeJSFromDotNet", Arguments: [ 2, True, [2,true,null] ], StreamIds: [  ] }.
+2024-09-27 23:58:47.9965 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost The JS interop call with callback id '2' succeeded.
+2024-09-27 23:58:48.0124 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":1,"operations":[{"type":"add","ssrComponentId":1,"marker":{"type":"server","prerenderId":"4dd3682bf3a8490e8559bc1b98044d19","key":{"locationHash":"19BAF45F2C7EBC7A4504DBACB439BF278F8D23AF003879A174341DD7DB714F50:0","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8IB8u76GlAtEvjUcAC0mH/BMDZJo2ZR4uJxPe4qV79sYuQnBLsIY433Nn4CxhzOvyxf2NCzUfw09Tl6rzvfvIp5++LeKD1he0LMk5UZMHjmLonPla7g0a8vd1LcCxzZ4N0uaTvxC/kJNyjEuV4ohi4KcPxICQnabScgW9i+Qe9P89/fdCWj8bxbB0stHAYZAjJ3GfOYyqNHjBDq6KQ2SNAT0/7+JH28M++1QdHrl5D3HS/km8PNjU8IfAGyq8kXtiXn33ezjtcUL23GVyZokxKFmvHYh8L38W7mHGgMgKYF+F7wWivwdDkP+ntq57zZmKbX3GgjKvLO+KzW5BBoLzqXDLl8TOIXRXrA5k/oLhqX1PsPDU2EuKLl4NkFp8+hq6A6IeyhoKFD1pTdfZVQrS5QW5POBSg7s7gV7Etf3pq4TsTVFC8ge8QCPtrJNbYJiceml7JkNObep5ftl08NgU2EhYZnYEm0siNbtGkxRNQzqam+O+9eleiq4uI7YRW+7v2UIoD+wB9ahUQPYFYzEMew=","uniqueId":0}}]}, CfDJ8IB8u76GlAtEvjUcAC0mH/Cdu2rw2noh02iSOMyVkioBg/dMoOa28DDOMnVF05E1jWrem/SevhxkCLNXacL8g1Uqgi8jvu4CykWtM3/dnhHfpoclcLZb636bdHeq+unlG3AsyGmIT/Knxh8/Ct7FyCaocriQRXTT0hvl0tPL2y55MrWKruZ+SUwI+Ubl4RAzDcCp1bWqOH6tl4qUvpQ+LP59MYFWvYmlNdwUKo2lOhNy/Tnp2YIKtwcQNdZPclQAzHkeiVPygtAUbF//0NeQgSihkh/PRLpeWgIJghPQRAlbqJix+C0Anj2sZK88pQBmflVLdYeKIeggrqLJeWlA+Tj+OhLZHN76z2iHz0I7ZjRTqw3wWs99VHmbWOpOZVb15hi27UjEyMxzHpoVjSRxQE/d+zqaTy8c4k0EHJv4CbMw6JVOzKAtk8S8beU26UOo/IwSiqIugWnuQqUEC2eaLqp1fDBmyacSgQST5TQW6diuLFz85vDaX5Zo+hEK4ZX0OjqcZfjUJrg7+j+Gtsy5d9CbenHumtnisQ9Tc59dr0c3 ], StreamIds: [  ] }.
+2024-09-27 23:58:48.0392 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components started.
+2024-09-27 23:58:48.0392 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Opening circuit with id '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg'.
+2024-09-27 23:58:48.0454 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Circuit id '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg' connected using connection 'CL8wuy9lUk2oGqi7q5HzHA'.
+2024-09-27 23:58:48.0454 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 0 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:48.0602 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 1 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 0 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 2 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 1 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 2 of size 9784 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:48.0602 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components succeeded.
+2024-09-27 23:58:48.0785 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 2,  ], StreamIds: [  ] }.
+2024-09-27 23:58:48.0785 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 2
+2024-09-27 23:58:48.0785 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 2 without error in 13.5425ms.
+2024-09-27 23:58:50.8437 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "BeginInvokeDotNetFromJS", Arguments: [ 1, , DispatchEventAsync, 1, [{"eventHandlerId":14,"eventName":"click","eventFieldInfo":null},{"detail":1,"screenX":1796,"screenY":-615,"clientX":1995,"clientY":382,"offsetX":15,"offsetY":22,"pageX":1995,"pageY":382,"movementX":0,"movementY":0,"button":0,"buttons":0,"ctrlKey":false,"shiftKey":false,"altKey":false,"metaKey":false,"type":"click"}] ], StreamIds: [  ] }.
+2024-09-27 23:58:50.8437 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Invoking instance method 'DispatchEventAsync' on instance '1' with callback id '1'.
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Handling event 14 of type 'MouseEventArgs'
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:50.8589 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 3 (Microsoft.AspNetCore.Components.Forms.EditForm) as child of 0 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Forms.EditForm
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 4 (Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingValidator) as child of 3 (Microsoft.AspNetCore.Components.Forms.EditForm)
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 5 (Microsoft.AspNetCore.Components.Forms.AntiforgeryToken) as child of 3 (Microsoft.AspNetCore.Components.Forms.EditForm)
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 6 (Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.AspNetCore.Components.Forms.EditContext]) as child of 3 (Microsoft.AspNetCore.Components.Forms.EditForm)
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingValidator
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.AspNetCore.Components.Forms.EditContext]
+2024-09-27 23:58:50.8589 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 3 of size 6310 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:50.8721 Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime Invocation of 'DispatchEventAsync' on reference '1' with callback id '1' completed successfully.
+2024-09-27 23:58:50.8721 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 3,  ], StreamIds: [  ] }.
+2024-09-27 23:58:50.8721 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 3
+2024-09-27 23:58:50.8721 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 3 without error in 4.3304ms.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "BeginInvokeDotNetFromJS", Arguments: [ 2, , DispatchEventAsync, 1, [{"eventHandlerId":16,"eventName":"click","eventFieldInfo":null},{"detail":1,"screenX":1172,"screenY":-901,"clientX":1302,"clientY":64,"offsetX":27,"offsetY":20,"pageX":1302,"pageY":64,"movementX":0,"movementY":0,"button":0,"buttons":0,"ctrlKey":false,"shiftKey":false,"altKey":false,"metaKey":false,"type":"click"}] ], StreamIds: [  ] }.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Invoking instance method 'DispatchEventAsync' on instance '1' with callback id '2'.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Handling event 16 of type 'MouseEventArgs'
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 3 of type Microsoft.AspNetCore.Components.Forms.EditForm
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 4 of type Microsoft.AspNetCore.Components.Forms.Mapping.FormMappingValidator
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 5 of type Microsoft.AspNetCore.Components.Forms.AntiforgeryToken
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 6 of type Microsoft.AspNetCore.Components.CascadingValue`1[Microsoft.AspNetCore.Components.Forms.EditContext]
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 4 of size 1120 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime Invocation of 'DispatchEventAsync' on reference '1' with callback id '2' completed successfully.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 4,  ], StreamIds: [  ] }.
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 4
+2024-09-27 23:58:52.6052 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 4 without error in 2.7421ms.
+2024-09-27 23:58:54.3666 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnLocationChanged", Arguments: [ http://localhost:5166/counter, , True ], StreamIds: [  ] }.
+2024-09-27 23:58:54.3666 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location changing to http://localhost:5166/counter in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg'.
+2024-09-27 23:58:54.3754 Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager Received notification that the URI has changed to http://localhost:5166/counter with isIntercepted=True
+2024-09-27 23:58:54.3754 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location change to 'http://localhost:5166/counter' in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg' succeeded.
+2024-09-27 23:58:54.3754 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/counter - - -
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/counter'
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '/counter (/counter)'
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint '/counter (/counter)'
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker Begin render root component 'App' with page 'Counter'.
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 0 (BlazorApp.Components.App)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 2 (BlazorApp.Components.Routes) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (BlazorApp.Components.Routes)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.Routing.Router Navigating to component BlazorApp.Components.Pages.Counter in response to path '/counter' with base URI 'http://localhost:5166/'
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 11 (BlazorApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 12 (BlazorApp.Components.Layout.NavMenu) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:54.3880 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 17 (BlazorApp.Components.Pages.Counter) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2024-09-27 23:58:54.4337 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Objects>()'
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Objects>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Objects.id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Objects.break_count (int) Required, 1], [Property: Objects.buy_date (DateOnly) Required, 2], [Property: Objects.object_name (string) Required, 3], [Property: Objects.recovery_date (DateOnly) Required, 4], [Property: Objects.room_number (string) Required, 5], [Property: Objects.type (string) Required, 6] }
+        SELECT o.id, o.break_count, o.buy_date, o.object_name, o.recovery_date, o.room_number, o.type
+        FROM public.objects AS o), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Objects>, 
+    BlazorApp.Components.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT o.id, o.break_count, o.buy_date, o.object_name, o.recovery_date, o.room_number, o.type
+FROM public.objects AS o
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT o.id, o.break_count, o.buy_date, o.object_name, o.recovery_date, o.room_number, o.type
+FROM public.objects AS o
+2024-09-27 23:58:54.4347 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 10ms reading results.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 17 of type BlazorApp.Components.Pages.Counter
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (BlazorApp.Components.Pages.Counter)
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:54.4537 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint '/counter (/counter)'
+2024-09-27 23:58:54.4537 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" completed keep alive response.
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 17 of type BlazorApp.Components.Pages.Counter
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4537 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:54.4537 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/counter - 200 - text/html;+charset=utf-8 75.6097ms
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":2,"operations":[{"type":"remove","ssrComponentId":1},{"type":"add","ssrComponentId":2,"marker":{"type":"server","prerenderId":"426c2616cd6c4e7282835074e48d870d","key":{"locationHash":"DC2F200BF2C82EDA65E3A466B98B3C7D466CE440FC36FCD7FC5A490120E201C2:0","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8IB8u76GlAtEvjUcAC0mH/AX4MieHPUvjDv8lyxuB/7r+g7Ce78pt8MBxIh0HhBTq4nr5sPgS0Llwh5wc/NkR6+ffqHpJHomr6vtScPh2jMI2okefXlOKQC23L3bGoC+Vt3OQYedO9vUNv5RqJb382ShSWVa4dhYbsXQ8cVTv4NlABdytokNSdQemZ8wbczkAONjptevKCnkFqvdS6+9JW1SbQwSb8DVpu0+e7pZv7446yPYB2XL58x9nrML+POWN3vp3SJdRNu6+4JOJKPY9k3R/B1sWkGwqgRWJOORQY1vEZzJicM5LqJQxV7D/mAXiUzJ55grJnB9HZMsiFjW1fXW2RSNtorpvQtZ89yT9RfLJQo9ClErUu0PbXdhRaYiZSNN3+Sv1zqck/CCuwL1YpeKvhFqOg8IxFMeiJJ0mo6QOYJIdbF6n8abxdmJg8iUz4NLOu0PI3aVD5wEMN0Tx+atV6B3+GaIgvYqF4CWU6xGxuMwoi4oWUrD1pWYgdVD8P1ANjTf7vDKwnCHE9PomxY=","uniqueId":1}}]},  ], StreamIds: [  ] }.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components started.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 0 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 2 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 5 of size 168 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 7 (BlazorApp.Components.Pages.Counter)
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT o.id, o.break_count, o.buy_date, o.object_name, o.recovery_date, o.room_number, o.type
+FROM public.objects AS o
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT o.id, o.break_count, o.buy_date, o.object_name, o.recovery_date, o.room_number, o.type
+FROM public.objects AS o
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Objects' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:54.4703 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type BlazorApp.Components.Pages.Counter
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 8 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 7 (BlazorApp.Components.Pages.Counter)
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 8 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 9 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 8 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 6 of size 3833 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components succeeded.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 5,  ], StreamIds: [  ] }.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 5
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 5 without error in 3.1731ms.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 6,  ], StreamIds: [  ] }.
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 6
+2024-09-27 23:58:54.4703 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 6 without error in 2.3572ms.
+2024-09-27 23:58:55.2517 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnLocationChanged", Arguments: [ http://localhost:5166/weather, , True ], StreamIds: [  ] }.
+2024-09-27 23:58:55.2517 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location changing to http://localhost:5166/weather in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg'.
+2024-09-27 23:58:55.2517 Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager Received notification that the URI has changed to http://localhost:5166/weather with isIntercepted=True
+2024-09-27 23:58:55.2517 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location change to 'http://localhost:5166/weather' in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg' succeeded.
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/weather - - -
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/weather'
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '/weather (/weather)'
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint '/weather (/weather)'
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker Begin render root component 'App' with page 'Weather'.
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 0 (BlazorApp.Components.App)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 2 (BlazorApp.Components.Routes) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (BlazorApp.Components.Routes)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.Routing.Router Navigating to component BlazorApp.Components.Pages.Weather in response to path '/weather' with base URI 'http://localhost:5166/'
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 11 (BlazorApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 12 (BlazorApp.Components.Layout.NavMenu) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:55.2738 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 17 (BlazorApp.Components.Pages.Weather) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2024-09-27 23:58:55.2738 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:55.2875 Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Work>()
+    .OrderBy(e => e.id)'
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Work>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Work.id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Work.description (string) Required, 1], [Property: Work.employee_id (int) Required FK Index, 2], [Property: Work.from_whom_id (int) Required FK Index, 3], [Property: Work.image (string) Required, 4], [Property: Work.send_time (DateTime) Required, 5], [Property: Work.status (string) Required, 6], [Property: Work.time_limit (DateTime) Required, 7], [Property: Work.total_time (DateTime) Required, 8], [Property: Work.work_number (int) Required, 9] }
+        SELECT t.id, t.description, t.employee_id, t.from_whom_id, t.image, t.send_time, t.status, t.time_limit, t.total_time, t.work_number
+        FROM public.tasks AS t
+        ORDER BY t.id ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Work>, 
+    BlazorApp.Components.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3224 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.description, t.employee_id, t.from_whom_id, t.image, t.send_time, t.status, t.time_limit, t.total_time, t.work_number
+FROM public.tasks AS t
+ORDER BY t.id
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.description, t.employee_id, t.from_whom_id, t.image, t.send_time, t.status, t.time_limit, t.total_time, t.work_number
+FROM public.tasks AS t
+ORDER BY t.id
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 13ms reading results.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3266 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3266 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3266 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3266 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 17 of type BlazorApp.Components.Pages.Weather
+2024-09-27 23:58:55.3266 Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => e.id == __id_0)'
+2024-09-27 23:58:55.3573 Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.division (string) Required, 1], [Property: Employee.email (string) Required, 2], [Property: Employee.first_name (string) Required, 3], [Property: Employee.last_name (string) Required, 4], [Property: Employee.middle_name (string) Required, 5], [Property: Employee.password (string) Required, 6], [Property: Employee.phone (long) Required, 7], [Property: Employee.role (string) Required, 8], [Property: Employee.salary (int) Required, 9], [Property: Employee.status (bool) Required, 10], [Property: Employee.work_amount (int) Required, 11] }
+        SELECT TOP(1) e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+        FROM public.employees AS e
+        WHERE e.id == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    BlazorApp.Components.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2024-09-27 23:58:55.3573 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3573 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3573 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3573 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3682 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-09-27 23:58:55.3682 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3682 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.Employee' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 7ms reading results.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3800 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3800 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3800 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3869 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (BlazorApp.Components.Pages.Weather)
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:55.3869 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint '/weather (/weather)'
+2024-09-27 23:58:55.3869 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" completed keep alive response.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 0 of type BlazorApp.Components.App
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 17 of type BlazorApp.Components.Pages.Weather
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/weather - 200 - text/html;+charset=utf-8 114.6272ms
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":3,"operations":[{"type":"remove","ssrComponentId":2},{"type":"add","ssrComponentId":3,"marker":{"type":"server","prerenderId":"59dbd4faad2643a9823ea09a6a9d1eb4","key":{"locationHash":"2C11FCDE926A2FBB0CBA5D7D3E1E1B03A545CBF94C159A42AC955F33CCBB5BF8:0","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8IB8u76GlAtEvjUcAC0mH/Afudpytj/e0vH1LX3ucpjjoUvbX15qGT4UeSg7YYdfLV9UtiRKb9g+M1scN6yr9rAxGoG7gYjm4wtJj1mwzivTV3TlT6RiGm5NZ5hxqHt4aZHH7JryV0oty8wVSZec4dgd61NbFL+OBmiQAMvNowmT7GB0dEPz1ovoLvKUdMkUPbJN2+y1b6VSVd+qjajQjgQeGEjnLVdOV6ZevWRNNH74uFaWaUwzrO8XqYBhxoj0vRzEMWR2nCLDFc2IxbWuY1ONZMYI5R6YcESKCis/PYyoDf+c4g8iJY/uMViHj27z1BLIBgQ2pzc0NPhXvuLQJ3Zh1I3Q//KaMYyuh9hfCmd7NmmMSoRxVcIjadTmW4Fjn+GvMUGqdexO0fY2nXhR8cbRXmdblFVbqNjj/9gjwpbyf4lM/H77zIbecaUt9QCAEskxjImDfzHd3mQLBGrrpvL7Uvl+ZJYKziWrnDRr69AUolX207DYMpsWNXXp1/iYrzcjUZIZOslOqExsQS5lPP8=","uniqueId":2}}]},  ], StreamIds: [  ] }.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components started.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 7 of type BlazorApp.Components.Pages.Counter
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 8 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 9 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 7 of size 104 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 10 (BlazorApp.Components.Pages.Weather)
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.description, t.employee_id, t.from_whom_id, t.image, t.send_time, t.status, t.time_limit, t.total_time, t.work_number
+FROM public.tasks AS t
+ORDER BY t.id
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.description, t.employee_id, t.from_whom_id, t.image, t.send_time, t.status, t.time_limit, t.total_time, t.work_number
+FROM public.tasks AS t
+ORDER BY t.id
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Work' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 10 of type BlazorApp.Components.Pages.Weather
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.Employee' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.3869 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.3869 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.4020 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.ChangeTracking The navigation 'Work.FromWhom' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:58:55.4020 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:58:55.4020 BlazorApp.Components.Services.WorkService Работник найден
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 11 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 10 (BlazorApp.Components.Pages.Weather)
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 11 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 12 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 11 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 8 of size 4950 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components succeeded.
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 7,  ], StreamIds: [  ] }.
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 7
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 7 without error in 7.1971ms.
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 8,  ], StreamIds: [  ] }.
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 8
+2024-09-27 23:58:55.4020 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 8 without error in 2.864ms.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM8" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM7" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM5" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM9" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM6" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JMA" received FIN.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM8" disconnecting.
+2024-09-27 23:58:58.5898 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM8" stopped.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM7" disconnecting.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM5" disconnecting.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM7" stopped.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM5" stopped.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM9" disconnecting.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM9" stopped.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM6" disconnecting.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JMA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" disconnecting.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JM5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMA" stopped.
+2024-09-27 23:58:58.5924 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JM6" stopped.
+2024-09-27 23:58:58.6848 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnLocationChanged", Arguments: [ http://localhost:5166/, , True ], StreamIds: [  ] }.
+2024-09-27 23:58:58.6848 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location changing to http://localhost:5166/ in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg'.
+2024-09-27 23:58:58.6848 Microsoft.AspNetCore.Components.Server.Circuits.RemoteNavigationManager Received notification that the URI has changed to http://localhost:5166/ with isIntercepted=True
+2024-09-27 23:58:58.6848 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Location change to 'http://localhost:5166/' in circuit '1s-ezcBbJEWwRtjmLSMKHN8IfVQzEEjgOOjF5o3xRhg' succeeded.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMC" accepted.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMC" started.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5166/ - - -
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/'
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint '/ (/)'
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware Static files was skipped as the request already matched an endpoint.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint '/ (/)'
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker Begin render root component 'App' with page 'Home'.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 0 (BlazorApp.Components.App)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 0 of type BlazorApp.Components.App
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 2 (BlazorApp.Components.Routes) as child of 0 (BlazorApp.Components.App)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (BlazorApp.Components.Routes)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.Routing.Router Navigating to component BlazorApp.Components.Pages.Home in response to path '/' with base URI 'http://localhost:5166/'
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 11 (BlazorApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 12 (BlazorApp.Components.Layout.NavMenu) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (BlazorApp.Components.Layout.MainLayout)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (BlazorApp.Components.Layout.NavMenu)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 17 (BlazorApp.Components.Pages.Home) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 17 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:59:00.6689 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery An antiforgery cookie token was reused.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint '/ (/)'
+2024-09-27 23:59:00.6689 Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMC" completed keep alive response.
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 0 of type BlazorApp.Components.App
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 2 of type BlazorApp.Components.Routes
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 11 of type BlazorApp.Components.Layout.MainLayout
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 12 of type BlazorApp.Components.Layout.NavMenu
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 17 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6689 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2024-09-27 23:59:00.6689 Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5166/ - 200 - text/html;+charset=utf-8 13.0545ms
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":4,"operations":[{"type":"remove","ssrComponentId":3},{"type":"add","ssrComponentId":4,"marker":{"type":"server","prerenderId":"fbef650994334ed698653a5e81e76b5e","key":{"locationHash":"19BAF45F2C7EBC7A4504DBACB439BF278F8D23AF003879A174341DD7DB714F50:0","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8IB8u76GlAtEvjUcAC0mH/ByElrOZDW2Gfwy624P0vykCaBEe4tMkJPBhtfu4GMtsk/sjA/K0wPxMgXvCdn1i/ygDqF1/aPGLnU90/QhQrdtK21nTtaFmS2lVZzpsJ2r7JdIb/d6VkoRZxLGySjH8gBuRLtgogYmFEXZJSZEhG182Rwamq9MpA043Mzi5J2MpfMiRi+ID2Pd1T5mIFTFrEYmGOCBk4VRFnUbFvSdejRT3wyVyVC+432TCGmGzDluL2m9lfonigIAzhjvurmHZA4DZpRGKtvpqqqiNq6vric34iyrCsQUZ15QMSv4kXC3mZNyxIYhRtRZvXvVF8t29t/tbnB+/iAueDTShRfspgloxwnmpGrO9v2PHz9Ckw/U+IyX5julueLRkG6A/GPYbMldsDmJEp47QTSDpfDqhUP74nEgyBmtYGpQKeK3cHhXlyeqqSlAwO0fKxOLFrtuHX5X27p+E73ke9LSy0aBVoNYxcgqAQlXuImZsmdHTLq1hWUUO/8Prchy9g7Zf2fnnrQ=","uniqueId":3}}]},  ], StreamIds: [  ] }.
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components started.
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 10 of type BlazorApp.Components.Pages.Weather
+2024-09-27 23:59:00.6971 Microsoft.EntityFrameworkCore.Infrastructure 'ApplicationDbContext' disposed.
+2024-09-27 23:59:00.6971 Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.6971 Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 11 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.RenderTree.Renderer Disposing component 12 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 9 of size 104 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:59:00.6971 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing root component 13 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 8.0.8 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (0ms).
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e.id, e.division, e.email, e.first_name, e.last_name, e.middle_name, e.password, e.phone, e.role, e.salary, e.status, e.work_amount
+FROM public.employees AS e
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.ChangeTracking Context 'ApplicationDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Command A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2024-09-27 23:59:00.7003 Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 13 of type BlazorApp.Components.Pages.Home
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 14 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 13 (BlazorApp.Components.Pages.Home)
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.RenderTree.Renderer Rendering component 14 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.RenderTree.Renderer Initializing component 15 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 14 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Sending render batch 10 of size 9784 bytes to client CL8wuy9lUk2oGqi7q5HzHA.
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost Update root components succeeded.
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 9,  ], StreamIds: [  ] }.
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 9
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 9 without error in 5.8558ms.
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 10,  ], StreamIds: [  ] }.
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.ComponentHub Received confirmation for batch 10
+2024-09-27 23:59:00.7003 Microsoft.AspNetCore.Components.Server.Circuits.RemoteRenderer Completing batch 10 without error in 5.4879ms.
+2024-09-27 23:59:19.6603 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JMC" received FIN.
+2024-09-27 23:59:19.6603 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMC" disconnecting.
+2024-09-27 23:59:19.6603 Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HN6V4PJS2JMC" stopped.
+2024-09-27 23:59:19.6603 Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HN6V4PJS2JMC" sending FIN because: "The Socket transport's send loop completed gracefully."

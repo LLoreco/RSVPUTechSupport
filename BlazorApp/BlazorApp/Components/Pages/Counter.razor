@@ -1,0 +1,135 @@
+﻿@page "/counter"
+@using BlazorApp.Components.Data
+@using BlazorApp.Components.Services
+@inherits OwningComponentBase<ObjectsService>
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Список предметов</PageTitle>
+
+<div style="text-align:center">
+    <h3>Список предметов</h3>
+    <hr />
+    <button class="btn btn-primary" @onclick="ShowPopup">Click me</button>
+    @if (popup)
+    {
+        <div class="modal" tabindex="-1" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Таблица работника</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="ClosePopup"></button>
+                    </div>
+                    <EditForm Model="objectObj" OnInvalidSubmit="InsertRecord">
+                        <div class="modal-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Имя</td>
+                                    <td><input type="text" placeholder="Введите имя" @bind="objectObj.object_name" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Тип</td>
+                                    <td><input type="text" placeholder="Введите nип объекта" @bind="objectObj.type" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Дата покупки</td>
+                                    <td><input type="date" placeholder="Введите дату покупку" @bind="objectObj.buy_date" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Кол-во поломок</td>
+                                    <td><input type="text" placeholder="Введите количество поломок" @bind="objectObj.break_count" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Дата последнего ремонта</td>
+                                    <td><input type="date" placeholder="Введите дату последнего ремонта" @bind="objectObj.recovery_date" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Номер кабинета</td>
+                                    <td><input type="text" placeholder="Введите номер комнаты" @bind="objectObj.room_number" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" @onclick="InsertRecord">Save</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    }
+    <table class="table">
+        <tr>
+            <th>id</th>
+            <th>Имя</th>
+            <th>Тип</th>
+            <th>Дата покупки</th>
+            <th>Кол-во поломок</th>
+            <th>Дата последнего ремонта</th>
+            <th>Номер кабинета</th>
+            <th>Phone</th>
+        </tr>
+        @foreach (var item in objectList)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.object_name</td>
+                <td>@item.type</td>
+                <td>@item.buy_date</td>
+                <td>@item.break_count</td>
+                <td>@item.recovery_date</td>
+                <td>@item.room_number</td>
+                <td class="btn-primary" @onclick="(()=>GetObjectDetails(item))">Edit</td>
+                <td class="btn-danger" @onclick="(()=>DeleteObject(item))">Delete</td>
+            </tr>
+        }
+    </table>
+</div>
+@code {
+    IList<Objects> objectList;
+
+    private bool popup = false;
+    Objects objectObj = new Objects();
+
+    private void ShowPopup()
+    {
+        objectObj = new Objects();
+        popup = true;
+    }
+    void ClosePopup()
+    {
+        popup = false;
+    }
+
+    protected override void OnInitialized()
+    {
+        objectList = Service.GetObjects();
+        objectList.OrderBy(e => e.id).ToList();
+    }
+    void InsertRecord()
+    {
+        var updateObjectDetails = false;
+        if (objectObj.id > 0)
+        {
+            updateObjectDetails = Service.UpdateRecord(objectObj);
+            ClosePopup();
+        }
+        else
+        {
+            objectObj.id = 0;
+            Service.InsertRecord(objectObj);
+        }
+        ClosePopup();
+        objectList = Service.GetObjects();
+    }
+    void GetObjectDetails(Objects objectEdit)
+    {
+        objectObj = objectEdit;
+        popup = true;
+    }
+    void DeleteObject(Objects objectDelete)
+    {
+        var res = Service.DeleteRecord(objectDelete);
+        objectList.Clear();
+        objectList = Service.GetObjects();
+    }
+}
