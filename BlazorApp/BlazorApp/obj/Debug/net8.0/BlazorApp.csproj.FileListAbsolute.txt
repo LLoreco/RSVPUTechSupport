@@ -170,3 +170,4 @@ D:\BlazorExample\RSVPUTechSupport\BlazorApp\BlazorApp\obj\Debug\net8.0\refint\Bl
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.pdb
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.genruntimeconfig.cache
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\BlazorApp\obj\Debug\net8.0\ref\BlazorApp.dll
+D:\BlazorExample\RSVPUTechSupport\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.sourcelink.json

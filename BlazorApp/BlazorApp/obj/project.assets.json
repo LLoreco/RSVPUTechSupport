@@ -411,6 +411,19 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.JSInterop/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -1420,6 +1433,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.JSInterop/5.0.0": {
+      "sha512": "qhLTZMoOsAbDWwE7M+VbjxH3EuP654tclaOhi6Sf7Xh6bj6TXDO0GiNQeNPdebMClKMGELJezOwbFp1BFB+9Ug==",
+      "type": "package",
+      "path": "microsoft.jsinterop/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.JSInterop.dll",
+        "lib/net5.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.5.0.0.nupkg.sha512",
+        "microsoft.jsinterop.nuspec"
+      ]
+    },
     "Microsoft.Win32.Registry/4.7.0": {
       "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "type": "package",
@@ -2113,6 +2141,7 @@
       "EntityFramework >= 6.5.1",
       "EntityFramework6.Npgsql >= 6.4.3",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
+      "Microsoft.JSInterop >= 5.0.0",
       "NLog >= 5.3.4",
       "NLog.Web.AspNetCore >= 5.3.13",
       "Npgsql >= 8.0.4",
@@ -2184,6 +2213,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.8, )"
+          },
+          "Microsoft.JSInterop": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "NLog": {
             "target": "Package",

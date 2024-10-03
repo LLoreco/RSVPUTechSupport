@@ -19,6 +19,7 @@ namespace BlazorApp.Components.Services
         {
             try
             {
+                var item = _dbContext.work.OrderBy(e => e.id).ToList();
                 return _dbContext.work.OrderBy(e => e.id).ToList();
             }
             catch (Exception ex)
