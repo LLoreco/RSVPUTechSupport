@@ -1,4 +1,5 @@
 ﻿using API.Data;
+using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,105 +10,64 @@ namespace API.Controllers
     public class ObjectItemsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly ObjectsService _objectService;
 
         public ObjectItemsController(ApplicationDbContext context)
         {
             _context = context;
+            _objectService = new ObjectsService(_context);
         }
 
-        // GET: api/TodoItems
+        // GET: api/ObjectItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Objects>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<Objects>>> GetObjects()
         {
-            return await _context.objects.ToListAsync();
+            var objects = _objectService.GetObjects().Result;
+            return Ok(objects);
         }
 
-        // GET: api/TodoItems/5
+        // GET: api/ObjectItems/id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Objects>> GetTodoItem(int id)
+        public async Task<ActionResult<Objects>> GetObject(int id)
         {
-            var todoItem = await _context.objects.FindAsync(id);
-
-            if (todoItem == null)
-            {
-                return NotFound();
-            }
-
-            return todoItem;
+            var objects = await _objectService.GetObject(id);
+            return Ok(objects);
         }
 
-        // POST: api/TodoItems
+        // POST: api/ObjectItems
         [HttpPost]
-        public async Task<ActionResult<Objects>> PostTodoItem(Objects item)
+        public async Task<ActionResult<Objects>> PostObject(Objects item)
         {
             _context.objects.Add(item);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetTodoItem), new { id = item.id }, item);
+            return CreatedAtAction(nameof(GetObject), new { id = item.id }, item);
         }
 
-        // PUT: api/TodoItems/5
+        // PUT: api/ObjectItems/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(int id, Objects item)
+        public async Task<IActionResult> PutObject(int id, Objects item)
         {
-            if (id != item.id)
-            {
-                return BadRequest("IDs do not match");
-            }
-
-            var existingItem = await _context.objects.FindAsync(id);
-            if (existingItem == null)
-            {
-                return NotFound("Item not found");
-            }
-
-            // Обновляем только те поля, которые действительно нужно обновить
-            existingItem.object_name = item.object_name;
-            existingItem.type = item.type;
-            existingItem.buy_date = item.buy_date;
-            existingItem.break_count = item.break_count;
-            existingItem.recovery_date = item.recovery_date;
-            existingItem.room_number = item.room_number;
-            
-
-            try
+            var result = await _objectService.UpdateRecord(item);
+            if (result.IsSuccess)
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TodoItemExists(id))
-                {
-                    return NotFound("Item not found after update attempt");
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            
             return NoContent();
         }
 
-        // DELETE: api/TodoItems/5
+        // DELETE: api/ObjectItems/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(int id)
+        public async Task<IActionResult> DeleteObject(int id)
         {
-            var todoItem = await _context.objects.FindAsync(id);
-            if (todoItem == null)
+            var objects = await _objectService.GetObject(id);
+            var result = await _objectService.DeleteRecord(objects.Result);
+            if (result.IsSuccess)
             {
-                return NotFound();
+                await _context.SaveChangesAsync();
             }
-
-            _context.objects.Remove(todoItem);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool TodoItemExists(int id)
-        {
-            return _context.objects.Any(e => e.id == id);
         }
     }
 }

@@ -18,27 +18,30 @@ namespace API.Controllers
             _employeeService = new EmployeeService(_context);
         }
 
-        // GET: api/TodoItems
+        // GET: api/EmployeeItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Employee>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
-            return _employeeService.GetAllEmployee();
+            var employees = _employeeService.GetAllEmployee().Result;
+            return Ok(employees);
         }
 
-        // GET: api/TodoItems/5
+        // GET: api/EmployeeItems/id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>> GetTodoItem(int id)
+        public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
-            return _employeeService.GetEmployee(id);
+            var employee = _employeeService.GetEmployee(id).Result;
+            return Ok(employee.Result);
         }
 
-        // POST: api/TodoItems
+        // POST: api/EmployeeItems
         [HttpPost]
-        public async Task<ActionResult<Employee>> PostTodoItem(Employee item)
+        public async Task<ActionResult<Employee>> PostEmployee(Employee item)
         {
-            if (_employeeService.InsertRecord(item))
+            var result = await _employeeService.InsertRecord(item);
+            if (result.IsSuccess)
             {
-                return CreatedAtAction(nameof(GetTodoItem), new { id = item.id }, item);
+                return CreatedAtAction(nameof(GetEmployee), new { id = item.id }, item);
             }
             else
             {
@@ -46,24 +49,26 @@ namespace API.Controllers
             }
         }
 
-        // PUT: api/TodoItems/5
+        // PUT: api/EmployeeItems/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(int id, Employee item)
+        public async Task<IActionResult> PutEmployee(int id, Employee item)
         {
-            if (_employeeService.UpdateRecord(item))
+            var result = await _employeeService.UpdateRecord(item);
+            if (result.IsSuccess)
             {
                 await _context.SaveChangesAsync();
             }
-            
 
             return NoContent();
         }
 
-        // DELETE: api/TodoItems/5
+        // DELETE: api/EmployeeItems/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(int id)
+        public async Task<IActionResult> DeleteEmployee(int id)
         {
-            if (_employeeService.DeleteRecord(_employeeService.GetEmployee(id)))
+            var employee = await _employeeService.GetEmployee(id);
+            var result = await _employeeService.DeleteRecord(employee.Result);
+            if (result.IsSuccess)
             {
                 await _context.SaveChangesAsync();
             }

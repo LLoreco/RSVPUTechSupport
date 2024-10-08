@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "GetTodoItems",
+    "Method": "GetEmployees",
     "RelativePath": "api/EmployeeItems",
     "HttpMethod": "GET",
     "IsController": true,
@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "PostTodoItem",
+    "Method": "PostEmployee",
     "RelativePath": "api/EmployeeItems",
     "HttpMethod": "POST",
     "IsController": true,
@@ -47,7 +47,7 @@
   },
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "GetTodoItem",
+    "Method": "GetEmployee",
     "RelativePath": "api/EmployeeItems/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "PutTodoItem",
+    "Method": "PutEmployee",
     "RelativePath": "api/EmployeeItems/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -94,7 +94,7 @@
   },
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "DeleteTodoItem",
+    "Method": "DeleteEmployee",
     "RelativePath": "api/EmployeeItems/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -110,7 +110,7 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "GetTodoItems",
+    "Method": "GetObjects",
     "RelativePath": "api/ObjectItems",
     "HttpMethod": "GET",
     "IsController": true,
@@ -130,7 +130,7 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "PostTodoItem",
+    "Method": "PostObject",
     "RelativePath": "api/ObjectItems",
     "HttpMethod": "POST",
     "IsController": true,
@@ -156,7 +156,7 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "GetTodoItem",
+    "Method": "GetObject",
     "RelativePath": "api/ObjectItems/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -182,7 +182,7 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "PutTodoItem",
+    "Method": "PutObject",
     "RelativePath": "api/ObjectItems/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -203,7 +203,7 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "DeleteTodoItem",
+    "Method": "DeleteObject",
     "RelativePath": "api/ObjectItems/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

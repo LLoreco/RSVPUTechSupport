@@ -1,6 +1,8 @@
 ﻿using NLog;
 using API.Data;
 using API.Interfaces;
+using API.Models;
+using Microsoft.EntityFrameworkCore;
 namespace API.Services
 {
     public class EmployeeService: IEmployeeService
@@ -12,11 +14,11 @@ namespace API.Services
             _dbContext = _db;
         }
 
-        public List<Employee> GetAllEmployee()
+        public async Task<List<Employee>> GetAllEmployee()
         {
             try
             {
-                return _dbContext.employees.ToList().OrderBy(e => e.id).ToList();
+                return await _dbContext.employees.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -24,55 +26,79 @@ namespace API.Services
                 return new List<Employee>();
             }
         }
-        public Employee GetEmployee(int id)
+        public async Task<TaskResult<Employee>> GetEmployee(int id)
         {
             try
             {
-                return _dbContext.employees.Find(id);
+                var employee = await _dbContext.employees.FindAsync(id);
+                return new TaskResult<Employee>
+                {
+                    IsSuccess = true,
+                    Result = employee
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось получить данные из таблицы EMPLOYEE в EmployeeService");
-                return new Employee();
+                return new TaskResult<Employee>
+                {
+                    IsSuccess = false,
+                    Result = null
+                };
             }
         }
 
-        public bool InsertRecord(Employee employee)
+        public async Task<TaskResult<bool>> InsertRecord(Employee employee)
         {
             try
             {
                 _dbContext.employees.Add(employee);
-                _dbContext.SaveChanges();
-                return true;
+                await _dbContext.SaveChangesAsync();
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Не удалось ввести данные в таблицу EMPLOYEE в EmployeeService");
-                return false;
+                _logger.Error(ex, "Ошибка добавления записи в EmployeeService");
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
-            
         }
 
-        public Employee EditRecord(int employeeID)
+        public async Task<TaskResult<Employee>> EditRecord(int employeeID)
         {
             try
             {
-                Employee ec = new Employee();
-                return _dbContext.employees.FirstOrDefault(u => u.id == employeeID);
+                var employee = await _dbContext.employees.FindAsync(employeeID);
+                return new TaskResult<Employee>
+                {
+                    IsSuccess = true,
+                    Result = employee
+                };
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Не удалось ввести данные в таблицу EMPLOYEE в EmployeeService");
-                return new Employee();
+                _logger.Error(ex, "Ошибка редактирования записи в EmployeeService");
+                return new TaskResult<Employee>
+                {
+                    IsSuccess = false,
+                    Result = null
+                };
             }
-            
+
         }
 
-        public bool UpdateRecord(Employee employeeUpdate)
+        public async Task<TaskResult<bool>> UpdateRecord(Employee employeeUpdate)
         {
             try
             {
-                var employeeRecordUpdate = _dbContext.employees.FirstOrDefault(u => u.id == employeeUpdate.id);
+                var employeeRecordUpdate = await _dbContext.employees.FindAsync(employeeUpdate.id);
                 if (employeeRecordUpdate != null)
                 {
                     employeeRecordUpdate.first_name = employeeUpdate.first_name;
@@ -87,56 +113,66 @@ namespace API.Services
                     employeeRecordUpdate.status = employeeUpdate.status;
                     employeeRecordUpdate.password = employeeUpdate.password;
                     employeeRecordUpdate.login = employeeUpdate.login;
-                    _dbContext.SaveChanges();
+                    await _dbContext.SaveChangesAsync();
                 }
                 else
                 {
-                    return false;
+                    return new TaskResult<bool>
+                    {
+                        IsSuccess = false,
+                        Result = false
+                    };
                 }
-                return true;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Не удалось обновить данные в таблице EMPLOYEE в EmployeeService");
-                return false;
+                _logger.Error(ex, "Ошибка обновления записи в EmployeeService");
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
-           
+
         }
-        public bool DeleteRecord(Employee employeeDelete)
+        public async Task<TaskResult<bool>> DeleteRecord(Employee employeeDelete)
         {
             try
             {
-                var employeeRecordDelete = _dbContext.employees.FirstOrDefault(u => u.id == employeeDelete.id);
+                var employeeRecordDelete = await _dbContext.employees.FindAsync(employeeDelete.id);
                 if (employeeRecordDelete != null)
                 {
                     _dbContext.Remove(employeeRecordDelete);
-                    _dbContext.SaveChanges();
+                    await _dbContext.SaveChangesAsync();
                 }
                 else
                 {
-                    return false;
+                    return new TaskResult<bool>
+                    {
+                        IsSuccess = false,
+                        Result = false
+                    };
                 }
-                return true;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Не удалось удалить запись из таблицы EMPLOYEE в EmployeeService");
-                return false;
+                _logger.Error(ex, "Ошибка удаления записи в EmployeeService");
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
-            
         }
-        //public Employee FindEmployee(LoginViewModel loginUsername)
-        //{
-        //    var user= _dbContext.employees.FirstOrDefault(x => x.login == loginUsername.UserName);
-        //    if (user == null || user.password != loginUsername.Password)
-        //    {
-        //        return null;
-        //    }
-        //    else
-        //    {
-        //        return user;
-        //    }
-            
-        //}
     }
 }
