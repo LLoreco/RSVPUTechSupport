@@ -1,6 +1,5 @@
 ﻿using API.Data;
 using BlazorApp.Components.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -20,25 +19,28 @@ namespace API.Controllers
 
         // GET: api/WorkItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Work>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<Work>>> GetWorks()
         {
-            return _workService.GetWorks();
+            var works = await _workService.GetWorks();
+            return Ok(works);
         }
 
         // GET: api/WorkItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Work>> GetTodoItem(int id)
+        public async Task<ActionResult<Work>> GetWork(int id)
         {
-            return _workService.GetWork(id);
+            var work = await _workService.GetWork(id);
+            return Ok(work);
         }
 
         // POST: api/WorkItems
         [HttpPost]
-        public async Task<ActionResult<Work>> PostTodoItem(Work item)
+        public async Task<ActionResult<Work>> PostWork(Work item)
         {
-            if (_workService.InsertRecord(item))
+            var result = await _workService.InsertRecord(item);
+            if (result.IsSuccess)
             {
-                return CreatedAtAction(nameof(GetTodoItem), new { id = item.id }, item);
+                return CreatedAtAction(nameof(GetWork), new { id = item.id }, item);
             }
             else
             {
@@ -48,9 +50,10 @@ namespace API.Controllers
 
         // PUT: api/WorkItems/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(int id, Work item)
+        public async Task<IActionResult> PutWork(int id, Work item)
         {
-            if (_workService.UpdateRecord(item))
+            var result = await _workService.UpdateRecord(item);
+            if (result.IsSuccess)
             {
                 await _context.SaveChangesAsync();
             }
@@ -59,9 +62,11 @@ namespace API.Controllers
 
         // DELETE: api/WorkItems/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(int id)
+        public async Task<IActionResult> DeteleWork(int id)
         {
-            if (_workService.DeleteRecord(_workService.GetWork(id)))
+            var work = await _workService.GetWork(id);
+            var result = await _workService.DeleteRecord(work.Result);
+            if (result.IsSuccess)
             {
                 await _context.SaveChangesAsync();
             }

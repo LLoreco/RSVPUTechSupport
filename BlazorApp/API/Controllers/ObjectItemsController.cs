@@ -38,10 +38,15 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult<Objects>> PostObject(Objects item)
         {
-            _context.objects.Add(item);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetObject), new { id = item.id }, item);
+            var result = await _objectService.InsertRecord(item);
+            if (result.IsSuccess)
+            {
+                return CreatedAtAction(nameof(GetObject), new { id = item.id }, item);
+            }
+            else
+            {
+                return null;
+            }
         }
 
         // PUT: api/ObjectItems/id

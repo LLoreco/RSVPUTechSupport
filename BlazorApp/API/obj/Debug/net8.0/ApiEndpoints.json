@@ -219,7 +219,7 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "GetTodoItems",
+    "Method": "GetWorks",
     "RelativePath": "api/WorkItems",
     "HttpMethod": "GET",
     "IsController": true,
@@ -239,7 +239,7 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "PostTodoItem",
+    "Method": "PostWork",
     "RelativePath": "api/WorkItems",
     "HttpMethod": "POST",
     "IsController": true,
@@ -265,7 +265,7 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "GetTodoItem",
+    "Method": "GetWork",
     "RelativePath": "api/WorkItems/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -291,7 +291,7 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "PutTodoItem",
+    "Method": "PutWork",
     "RelativePath": "api/WorkItems/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -312,7 +312,7 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "DeleteTodoItem",
+    "Method": "DeteleWork",
     "RelativePath": "api/WorkItems/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

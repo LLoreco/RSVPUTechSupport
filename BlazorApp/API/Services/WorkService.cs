@@ -1,5 +1,6 @@
 ﻿using API.Data;
 using API.Interfaces;
+using API.Models;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 
@@ -14,12 +15,11 @@ namespace BlazorApp.Components.Services
             _dbContext = dbContext;
         }
 
-        public List<Work> GetWorks()
+        public async Task<List<Work>> GetWorks()
         {
             try
             {
-                var item = _dbContext.work.OrderBy(e => e.id).ToList();
-                return item;
+                return await _dbContext.work.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -27,19 +27,28 @@ namespace BlazorApp.Components.Services
                 return new List<Work>();
             }
         }
-        public Work GetWork(int id)
+        public async Task<TaskResult<Work>> GetWork(int id)
         {
             try
             {
-                return _dbContext.work.Find(id);
+                var work = await _dbContext.work.FindAsync(id);
+                return new TaskResult<Work>
+                {
+                    IsSuccess = true,
+                    Result = work
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось получить данные из таблицы WORK в WorkService");
-                return new Work();
+                return new TaskResult<Work>
+                {
+                    IsSuccess = false,
+                    Result = null
+                };
             }
         }
-        public bool InsertRecord(Work work)
+        public async Task<TaskResult<bool>> InsertRecord(Work work)
         {
             try
             {
@@ -65,34 +74,51 @@ namespace BlazorApp.Components.Services
                 _dbContext.work.Add(work);
                 _dbContext.SaveChanges();
                 _logger.Info("Создана новая запись и сохранена в таблицу WORK");
-                return true;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось записать данные в таблицу WORK в WorkService");
-                return false;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
             
         }
 
-        public Work EditRecord(int workID)
+        public async Task<TaskResult<Work>> EditRecord(int workID)
         {
             try
             {
-                return _dbContext.work.FirstOrDefault(u => u.id == workID);
+                var work = await _dbContext.work.FindAsync(workID);
+                return new TaskResult<Work>
+                {
+                    IsSuccess = true,
+                    Result = work
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось записать данные в таблицу WORK в WorkService");
-                return new Work();
+                return new TaskResult<Work>
+                {
+                    IsSuccess = false,
+                    Result = null
+                };
             }
         }
 
-        public bool UpdateRecord(Work workUpdate)
+        public async Task<TaskResult<bool>> UpdateRecord(Work workUpdate)
         {
             try
             {
-                var workRecordUpdate = _dbContext.work.Include(w => w.Employee).FirstOrDefault(u => u.id == workUpdate.id);
+                var workRecordUpdate = await _dbContext.work.FindAsync(workUpdate.id);
                 if (workRecordUpdate != null)
                 {
                     workRecordUpdate.work_number = workUpdate.work_number;
@@ -107,44 +133,74 @@ namespace BlazorApp.Components.Services
                     {
                         workRecordUpdate.employee_id = availableEmployee.id;
                         workRecordUpdate.image = FindEmployee(workRecordUpdate.employee_id);
-                        _dbContext.SaveChanges();
+                        await _dbContext.SaveChangesAsync();
                     }
                     else
                     {
                         workUpdate.employee_id = workRecordUpdate.employee_id;
                         workRecordUpdate.image = "ОШИБКА";
-                        _dbContext.SaveChanges();
+                        await _dbContext.SaveChangesAsync();
                     }
                     _logger.Info("Запись обновлена");
-                    return true;
                 }
-                return false;
+                else
+                {
+                    return new TaskResult<bool>
+                    {
+                        IsSuccess = false,
+                        Result = false
+                    };
+                }
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось изменить данные в таблице WORK в WorkService");
-                return false;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
         }
 
-        public bool DeleteRecord(Work workDelete)
+        public async Task<TaskResult<bool>> DeleteRecord(Work workDelete)
         {
             try
             {
-                var workRecordDelete = _dbContext.work.FirstOrDefault(u => u.id == workDelete.id);
+                var workRecordDelete = await _dbContext.work.FindAsync(workDelete.id);
                 if (workRecordDelete != null)
                 {
                     _dbContext.work.Remove(workRecordDelete);
-                    _dbContext.SaveChanges();
-                    return true;
+                    await _dbContext.SaveChangesAsync();
+                }
+                else
+                {
+                    return new TaskResult<bool>
+                    {
+                        IsSuccess = false,
+                        Result = false
+                    };
                 }
                 _logger.Info("Запись удалена");
-                return false;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = true,
+                    Result = true
+                };
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось удалить данные из таблицы WORK в WorkService");
-                return false;
+                return new TaskResult<bool>
+                {
+                    IsSuccess = false,
+                    Result = false
+                };
             }
             
         }
