@@ -75,6 +75,7 @@ namespace BlazorApp.Components.Services
                 _dbContext.work.Add(work);
                 _dbContext.SaveChanges();
                 CreateRecordToRecoveryHistory(work);
+                UpdateObjectBreakCount(work);
                 _logger.Info("Создана новая запись и сохранена в таблицу WORK");
                 return new TaskResult<bool>
                 {
@@ -254,6 +255,12 @@ namespace BlazorApp.Components.Services
             history.object_id = work.object_id;
             var recoveryHistoryService = new RecoveryHistoryService(_dbContext);
             recoveryHistoryService.InsertRecord(history, true);
+        }
+        private void UpdateObjectBreakCount(Work work)
+        {
+            Objects objectDB = _dbContext.objects.FindAsync(work.object_id).Result;
+            var objectService = new ObjectsService(_dbContext);
+            objectService.UpdateRecord(objectDB);
         }
     }
 }

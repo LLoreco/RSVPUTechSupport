@@ -101,7 +101,7 @@ namespace API.Services
                     objectDB.object_name = objectsUpdate.object_name;
                     objectDB.type = objectsUpdate.type;
                     objectDB.buy_date = objectsUpdate.buy_date;
-                    objectDB.break_count = objectsUpdate.break_count;
+                    objectDB.break_count = CountBreaks(objectDB.id);
                     objectDB.recovery_date = objectsUpdate.recovery_date;
                     objectDB.room_number = objectsUpdate.room_number;
                     await _dbContext.SaveChangesAsync();
@@ -163,6 +163,11 @@ namespace API.Services
                     Result = false
                 };
             }
+        }
+        private int CountBreaks(int id)
+        {
+            var recoveryHistory = _dbContext.recoveryHistory.Where(rh => rh.object_id == id).Count();
+            return recoveryHistory;
         }
     }
 }
