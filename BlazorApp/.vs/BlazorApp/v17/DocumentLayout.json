@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\data\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\services\\recoveryhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\services\\recoveryhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\interfaces\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\interfaces\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecoveryHistoryService.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\RecoveryHistoryService.cs",
+              "RelativeDocumentMoniker": "API\\Services\\RecoveryHistoryService.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\RecoveryHistoryService.cs",
+              "RelativeToolTip": "API\\Services\\RecoveryHistoryService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T11:31:37.752Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,35 +53,9 @@
               "RelativeDocumentMoniker": "API\\Data\\Work.cs",
               "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Data\\Work.cs",
               "RelativeToolTip": "API\\Data\\Work.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwB0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T17:35:50.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorkItemsController.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\WorkItemsController.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
-              "RelativeToolTip": "API\\Controllers\\WorkItemsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA1wEEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:41:47.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IWorkService.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
-              "RelativeDocumentMoniker": "API\\Interfaces\\IWorkService.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
-              "RelativeToolTip": "API\\Interfaces\\IWorkService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:41:45.456Z",
+              "WhenOpened": "2024-10-09T11:30:15.156Z",
               "EditorCaption": ""
             },
             {
@@ -75,9 +66,35 @@
               "RelativeDocumentMoniker": "API\\Services\\WorkService.cs",
               "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\WorkService.cs",
               "RelativeToolTip": "API\\Services\\WorkService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA6wNsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T15:41:43.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkItemsController.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\WorkItemsController.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
+              "RelativeToolTip": "API\\Controllers\\WorkItemsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:41:47.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWorkService.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
+              "RelativeDocumentMoniker": "API\\Interfaces\\IWorkService.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
+              "RelativeToolTip": "API\\Interfaces\\IWorkService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:41:45.456Z",
               "EditorCaption": ""
             }
           ]

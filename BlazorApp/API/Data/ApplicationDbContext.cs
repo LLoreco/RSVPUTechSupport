@@ -11,5 +11,6 @@ namespace API.Data
         public DbSet<Employee> employees { get; set; }
         public DbSet<Objects> objects { get; set; }
         public DbSet<Work> work { get; set; }
+        public DbSet<RecoveryHistory> recoveryHistory { get; set; }
     }
 }

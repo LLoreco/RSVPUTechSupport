@@ -1,6 +1,7 @@
 ﻿using API.Data;
 using API.Interfaces;
 using API.Models;
+using API.Services;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 
@@ -73,6 +74,7 @@ namespace BlazorApp.Components.Services
                 }
                 _dbContext.work.Add(work);
                 _dbContext.SaveChanges();
+                CreateRecordToRecoveryHistory(work);
                 _logger.Info("Создана новая запись и сохранена в таблицу WORK");
                 return new TaskResult<bool>
                 {
@@ -129,10 +131,12 @@ namespace BlazorApp.Components.Services
                     workRecordUpdate.status = workUpdate.status;
 
                     var availableEmployee = _dbContext.employees.FirstOrDefault(e => e.id == workUpdate.employee_id);
-                    if (availableEmployee != null)
+                    var obj = _dbContext.objects.FirstOrDefault(o => o.id ==  workUpdate.object_id);
+                    if (availableEmployee != null && obj != null)
                     {
                         workRecordUpdate.employee_id = availableEmployee.id;
                         workRecordUpdate.image = FindEmployee(workRecordUpdate.employee_id);
+                        workRecordUpdate.object_id = obj.id;
                         await _dbContext.SaveChangesAsync();
                     }
                     else
@@ -238,6 +242,18 @@ namespace BlazorApp.Components.Services
         {
             work.send_time = DateTime.UtcNow + TimeSpan.FromHours(5);
             work.time_limit = DateTime.SpecifyKind(work.time_limit, DateTimeKind.Utc);
+        }
+        private void CreateRecordToRecoveryHistory(Work work)
+        {
+            RecoveryHistory history = new RecoveryHistory();
+            history.id = work.id;
+            history.description = work.description;
+            history.employee_id = work.employee_id;
+            history.recovery_date = work.send_time;
+            history.total_time = work.total_time;
+            history.object_id = work.object_id;
+            var recoveryHistoryService = new RecoveryHistoryService(_dbContext);
+            recoveryHistoryService.InsertRecord(history, true);
         }
     }
 }

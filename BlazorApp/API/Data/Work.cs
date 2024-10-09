@@ -19,6 +19,7 @@ namespace API.Data
         public string status { get; set; }
         public int employee_id { get; set; }
         public string image { get; set; }
+        public int object_id { get; set; }
 
         // Навигационное свойство для связи с сотрудником
         [ForeignKey("from_whom_id")]
