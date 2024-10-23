@@ -18,7 +18,9 @@ namespace BlazorApp.Components.Services
         {
             try
             {
-                return _dbContext.employees.ToList().OrderBy(e => e.id).ToList();
+                var employees = _dbContext.employees.ToList().OrderBy(e => e.id).ToList();
+                _logger.Info("Работники получены");
+                return employees;
             }
             catch (Exception ex)
             {

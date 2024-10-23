@@ -21,12 +21,13 @@ CREATE TABLE tasks (
     work_number INTEGER NOT NULL,
     from_whom_id INTEGER REFERENCES employees(id),
     description TEXT,
-    send_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    time_limit TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    total_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    send_time DATE DEFAULT CURRENT_DATE,
+    time_limit DATE DEFAULT CURRENT_DATE,
+    total_time DATE DEFAULT CURRENT_DATE,
     status VARCHAR(50) NOT NULL DEFAULT 'wait',
     employee_id INTEGER REFERENCES employees(id),
-    image VARCHAR(100)
+    image VARCHAR(100),
+    object_id INTEGER
 );
 
 -- Create Object table
@@ -34,9 +35,9 @@ CREATE TABLE objects (
     id SERIAL PRIMARY KEY,
     object_name VARCHAR(50) NOT NULL,
     type VARCHAR(50) NOT NULL,
-    buy_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    buy_date DATE DEFAULT CURRENT_DATE,
     break_count INTEGER NOT NULL,
-    recovery_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    recovery_date DATE DEFAULT CURRENT_DATE,
     room_number VARCHAR(50) NOT NULL
 );
 
@@ -50,6 +51,14 @@ CREATE TABLE recoveryhistorys (
     id SERIAL PRIMARY KEY,
     description TEXT,
     employee_id INTEGER REFERENCES employees(id),
-    recovery_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    total_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    recovery_date DATE DEFAULT CURRENT_DATE,
+    total_time DATE DEFAULT CURRENT_DATE,
+    object_id INTEGER
+);
+
+--Create FAQ table
+CREATE TABLE FAQ (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    description TEXT
 );

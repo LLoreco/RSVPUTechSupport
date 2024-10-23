@@ -1,0 +1,133 @@
+2024-10-22 13:42:08.6340 API.Services.EmployeeService Работники получены
+2024-10-22 13:42:08.6510 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 13:43:08.6566 API.Services.EmployeeService Работники получены
+2024-10-22 13:43:08.6566 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 13:44:26.6972 API.Services.EmployeeService Работник 4 получен
+2024-10-22 13:44:26.7019 API.Controllers.EmployeeItemsController Получил работника 4 через GET запрос
+2024-10-22 13:45:29.0323 API.Services.EmployeeService Работник 4 получен
+2024-10-22 13:45:29.0467 API.Controllers.EmployeeItemsController Получил работника 4 через GET запрос
+2024-10-22 13:45:47.9264 API.Services.EmployeeService Работник 5 создан
+2024-10-22 13:45:47.9264 API.Controllers.EmployeeItemsController Добавил работника 5 через POST запрос
+2024-10-22 13:46:05.5137 API.Services.EmployeeService Работник 6 создан
+2024-10-22 13:46:05.5137 API.Controllers.EmployeeItemsController Добавил работника 6 через POST запрос
+2024-10-22 13:47:08.6295 API.Services.EmployeeService Работники получены
+2024-10-22 13:47:08.6295 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 13:48:50.5553 API.Services.EmployeeService Работник 6 обновлен
+2024-10-22 13:48:50.5704 API.Controllers.EmployeeItemsController Обновил работника 6 через PUT запрос
+2024-10-22 13:49:32.2326 API.Services.EmployeeService Работники получены
+2024-10-22 13:49:32.2330 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 13:50:14.5641 API.Services.EmployeeService Работник 6 получен
+2024-10-22 13:50:14.6535 API.Services.EmployeeService Работник 6 удален
+2024-10-22 13:50:14.6535 API.Controllers.EmployeeItemsController Удалил работника 6 через DELETE запрос
+2024-10-22 13:50:28.1909 API.Services.EmployeeService Работники получены
+2024-10-22 13:50:28.1909 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 14:00:26.7426 API.Services.EmployeeService Работники получены
+2024-10-22 14:00:26.7558 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 14:23:41.9696 API.Controllers.ObjectItemsController Получил все объекты через GET запрос
+2024-10-22 14:24:20.9121 API.Controllers.ObjectItemsController Получил объект 7 через GET запрос
+2024-10-22 14:25:34.7971 API.Controllers.ObjectItemsController Добавил объект 4567 через POST запрос
+2024-10-22 14:26:51.3439 API.Controllers.ObjectItemsController Обновил объект 4567 через PUT запрос
+2024-10-22 14:26:58.0288 API.Services.EmployeeService Работники получены
+2024-10-22 14:26:58.0288 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 14:27:11.3289 API.Controllers.ObjectItemsController Получил объект 4567 через GET запрос
+2024-10-22 14:27:49.9011 API.Controllers.ObjectItemsController Удалил объект 4567 через DELETE запрос
+2024-10-22 14:27:55.8075 API.Controllers.ObjectItemsController Получил объект 4567 через GET запрос
+2024-10-22 14:59:20.1326 API.Controllers.WorkItemsController Получил всю работу через GET запрос
+2024-10-22 14:59:36.5635 API.Controllers.WorkItemsController Получил работу 1 через GET запрос
+2024-10-22 15:00:19.3962 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:00:19.7610 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:00:19.8101 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-10-22 15:00:19.8101 API.Controllers.WorkItemsController Добавил работу 15678 через POST запрос
+2024-10-22 15:00:43.7646 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:00:43.8298 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-22 15:00:49.6545 API.Controllers.WorkItemsController Получил всю работу через GET запрос
+2024-10-22 15:01:02.3819 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:01:02.3901 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:01:02.3901 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-22 15:01:09.9506 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:01:09.9594 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:01:09.9594 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-22 15:01:26.0933 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:01:26.0933 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:01:26.0933 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-22 15:01:56.1961 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:01:56.3154 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-22 15:02:04.1718 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:02:04.2204 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:02:04.2864 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-10-22 15:02:04.2864 API.Controllers.WorkItemsController Добавил работу 186742 через POST запрос
+2024-10-22 15:02:19.9294 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:02:19.9378 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:02:19.9378 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-10-22 15:02:19.9378 API.Controllers.WorkItemsController Добавил работу 287395 через POST запрос
+2024-10-22 15:02:19.9378 API.Services.ObjectsService Ошибка обновления записи в ObjectService
+2024-10-22 15:03:43.2939 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-22 15:03:43.2961 BlazorApp.Components.Services.WorkService Запись обновлена
+2024-10-22 15:03:43.2961 API.Controllers.WorkItemsController Добавил работу 287395 через PUT запрос
+2024-10-22 15:03:52.9180 API.Controllers.WorkItemsController Получил всю работу через GET запрос
+2024-10-22 15:04:30.0195 BlazorApp.Components.Services.WorkService Запись удалена
+2024-10-22 15:04:30.0195 API.Controllers.WorkItemsController Удалил работу 287395 через DELETE запрос
+2024-10-22 15:04:33.7774 API.Controllers.WorkItemsController Получил всю работу через GET запрос
+2024-10-22 15:05:38.1688 API.Controllers.RecoveryHistoryController Получил всю историю починок через GET запрос
+2024-10-22 15:06:18.2575 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 1 через GET запрос
+2024-10-22 15:06:23.3200 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 3 через GET запрос
+2024-10-22 15:06:26.0935 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 4 через GET запрос
+2024-10-22 15:06:31.4025 API.Controllers.RecoveryHistoryController Получил всю историю починок через GET запрос
+2024-10-22 15:06:40.7748 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 34567 через GET запрос
+2024-10-22 15:08:00.5526 API.Controllers.ObjectItemsController Получил все объекты через GET запрос
+2024-10-22 15:08:35.7003 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-22 15:08:35.7003 API.Controllers.RecoveryHistoryController Добавил историю починок объекта 345 через POST запрос
+2024-10-22 15:09:30.0504 API.Services.RecoveryHistoryService Запись обновлена
+2024-10-22 15:09:30.0504 API.Controllers.RecoveryHistoryController Обновил историю починок объекта 345 через PUT запрос
+2024-10-22 15:09:33.4234 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 34567 через GET запрос
+2024-10-22 15:09:38.1323 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 345 через GET запрос
+2024-10-22 15:10:13.9146 API.Controllers.RecoveryHistoryController Удалил историю починок объекта 345 через PUT запрос
+2024-10-22 15:10:17.2295 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 345 через GET запрос
+2024-10-22 15:26:22.2091 API.Controllers.FAQController Получил всех FAQ через GET запрос
+2024-10-22 15:26:49.3373 API.Controllers.FAQController Получил FAQ 1 через GET запрос
+2024-10-22 15:27:36.6840 API.Controllers.FAQController Добавил FAQ 3 через POST запрос
+2024-10-22 15:27:51.0615 API.Controllers.FAQController Получил FAQ 3 через GET запрос
+2024-10-22 15:28:59.8055 API.Controllers.FAQController обновлено FAQ 3 через PUT запрос
+2024-10-22 15:29:58.2798 API.Controllers.FAQController Добавил FAQ 4 через POST запрос
+2024-10-22 15:30:05.7826 API.Controllers.FAQController обновлено FAQ 3 через PUT запрос
+2024-10-22 15:30:09.4129 API.Controllers.FAQController Получил FAQ 3 через GET запрос
+2024-10-22 15:30:50.4369 API.Controllers.FAQController Удалено FAQ 4 через DELETE запрос
+2024-10-22 15:30:54.1021 API.Controllers.FAQController Получил всех FAQ через GET запрос
+2024-10-22 16:08:40.2979 API.Services.EmployeeService Работники получены
+2024-10-22 16:08:40.3123 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:09:01.3377 API.Services.EmployeeService Работник 5 получен
+2024-10-22 16:09:01.4131 API.Services.EmployeeService Работник 5 удален
+2024-10-22 16:09:01.4131 API.Controllers.EmployeeItemsController Удалил работника 5 через DELETE запрос
+2024-10-22 16:09:04.7652 API.Services.EmployeeService Работник 4 получен
+2024-10-22 16:09:04.8177 API.Services.EmployeeService Ошибка удаления записи в EmployeeService
+2024-10-22 16:32:40.2954 API.Services.EmployeeService Работники получены
+2024-10-22 16:32:40.2954 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:36:46.1217 API.Services.EmployeeService Работники получены
+2024-10-22 16:36:46.1343 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:36:55.1559 API.Services.EmployeeService Работники получены
+2024-10-22 16:36:55.1559 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:37:09.2299 API.Services.EmployeeService Работники получены
+2024-10-22 16:37:09.2299 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:38:20.8796 API.Services.EmployeeService Работники получены
+2024-10-22 16:38:20.8796 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:39:44.8211 API.Services.EmployeeService Работники получены
+2024-10-22 16:39:44.8211 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:40:37.1618 API.Services.EmployeeService Работники получены
+2024-10-22 16:40:37.1618 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:42:52.0059 API.Services.EmployeeService Работники получены
+2024-10-22 16:42:52.0059 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:43:08.4362 API.Services.EmployeeService Работники получены
+2024-10-22 16:43:08.4362 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:43:22.5640 API.Services.EmployeeService Работники получены
+2024-10-22 16:43:22.5640 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:43:59.8546 API.Services.EmployeeService Работник 6 создан
+2024-10-22 16:43:59.8546 API.Controllers.EmployeeItemsController Добавил работника 6 через POST запрос
+2024-10-22 16:44:17.9240 API.Services.EmployeeService Работники получены
+2024-10-22 16:44:17.9240 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:44:49.3912 API.Services.EmployeeService Работник 4 получен
+2024-10-22 16:44:49.3912 API.Controllers.EmployeeItemsController Получил работника 4 через GET запрос
+2024-10-22 16:45:08.7485 API.Services.EmployeeService Работники получены
+2024-10-22 16:45:08.7485 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-22 16:45:30.2111 API.Controllers.ObjectItemsController Получил все объекты через GET запрос
+2024-10-22 16:46:11.0538 API.Controllers.ObjectItemsController Получил все объекты через GET запрос
+2024-10-22 16:47:31.0921 API.Controllers.ObjectItemsController Получил все объекты через GET запрос

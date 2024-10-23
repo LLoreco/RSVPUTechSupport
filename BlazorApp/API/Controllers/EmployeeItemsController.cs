@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.Services;
+using NLog;
+using System.Text.Json;
 
 namespace API.Controllers
 {
@@ -11,6 +13,7 @@ namespace API.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly EmployeeService _employeeService;
+        private readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public EmployeeItemsController(ApplicationDbContext context)
         {
@@ -18,67 +21,145 @@ namespace API.Controllers
             _employeeService = new EmployeeService(_context);
         }
 
-        // GET: api/EmployeeItems
-        [HttpGet]
+        // GET: api/EmployeeItems/GetEmployee
+        [HttpGet("GetEmployee")]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
-            var employees = _employeeService.GetAllEmployee().Result;
-            return Ok(employees);
+            try
+            {
+                var employees = await _employeeService.GetAllEmployee();
+
+                if (employees.Count > 0)
+                {
+                    _logger.Info("Получил всех работников через GET запрос");
+
+                    return Ok(JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true }));
+                }
+                else
+                {
+                    return StatusCode(404, "Сотрудники не найдены.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Произошла ошибка при получении списка сотрудников.");
+                return StatusCode(500, "Произошла ошибка при получении списка сотрудников. Попробуйте позже.");
+            }
         }
 
-        // GET: api/EmployeeItems/id
-        [HttpGet("{id}")]
+        // GET: api/EmployeeItems/GetEmployee/id
+        [HttpGet("GetEmployee/{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
-            var employee = _employeeService.GetEmployee(id).Result;
-            return Ok(employee.Result);
+            try
+            {
+                var employee = await _employeeService.GetEmployee(id);
+
+                if (employee.IsSuccess)
+                {
+                    _logger.Info($"Получил работника {id} через GET запрос");
+                    return Ok(JsonSerializer.Serialize(employee));
+                }
+                else
+                {
+                    return StatusCode(404, "Сотрудник не найден.");
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при получении сотрудника {id} сотрудника.");
+                return StatusCode(500, $"Произошла ошибка при получении сотрудникa {id}. Попробуйте позже.");
+            }
+
         }
 
-        // POST: api/EmployeeItems
-        [HttpPost]
-        public async Task<ActionResult<Employee>> PostEmployee(Employee item)
+        // POST: api/EmployeeItems/AddEmployee
+        [HttpPost("AddEmployee")]
+        public async Task<ActionResult<Employee>> PostEmployee([FromBody] Employee item)
         {
-            var result = await _employeeService.InsertRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                return CreatedAtAction(nameof(GetEmployee), new { id = item.id }, item);
+                var result = await _employeeService.InsertRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Добавил работника {item.id} через POST запрос");
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Сотрудник не добавлен.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return null;
+                _logger.Error(ex, $"Произошла ошибка при добавлении сотрудника {item.id} сотрудника.");
+                return StatusCode(500, $"Произошла ошибка при добавлении сотрудникa {item.id}. Попробуйте позже.");
             }
         }
 
-        // PUT: api/EmployeeItems/id
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee(int id, Employee item)
+        // PUT: api/EmployeeItems/UpdateEmployee/id
+        [HttpPut("UpdateEmployee/{id}")]
+        public async Task<IActionResult> PutEmployee(int id, [FromBody] Employee item)
         {
-            var result = await _employeeService.UpdateRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
-            }
+                var result = await _employeeService.UpdateRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Обновил работника {item.id} через PUT запрос");
+                    await _context.SaveChangesAsync();
 
-            return NoContent();
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Сотрудник не найден.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при обновлении сотрудника {item.id} сотрудника.");
+                return StatusCode(500, $"Произошла ошибка при обновлении сотрудникa {item.id}. Попробуйте позже.");
+            }
+            
         }
 
-        // DELETE: api/EmployeeItems/id
-        [HttpDelete("{id}")]
+        // DELETE: api/EmployeeItems/DeleteEmployee/id
+        [HttpDelete("DeleteEmployee/{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = await _employeeService.GetEmployee(id);
-            var result = await _employeeService.DeleteRecord(employee.Result);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
+                var employeeResult = await _employeeService.GetEmployee(id);
+
+                if (!employeeResult.IsSuccess)
+                {
+                    return StatusCode(404, "Сотрудник не найден.");
+                }
+                else
+                {
+                    var employee = employeeResult.Result;
+
+                    var deleteResult = await _employeeService.DeleteRecord(employee);
+
+                    if (deleteResult.IsSuccess)
+                    {
+                        _logger.Info($"Удалил работника {id} через DELETE запрос");
+                        await _context.SaveChangesAsync();
+
+                        return Ok(JsonSerializer.Serialize(employee));
+                    }
+                    return StatusCode(500, $"Произошла ошибка при удалении сотрудника {id}.");
+                }
             }
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при удалении сотрудника {id} сотрудника.");
+                return StatusCode(500, $"Произошла ошибка при удалении сотрудникa {id}. Попробуйте позже.");
+            }
         }
 
-        private bool TodoItemExists(int id)
-        {
-            return _context.employees.Any(e => e.id == id);
-        }
     }
 }

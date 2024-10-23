@@ -1,0 +1,16 @@
+2024-10-19 10:21:23.0456 API.Controllers.EmployeeItemsController Получил всех работников
+2024-10-19 10:22:57.7458 API.Services.EmployeeService Работники получены
+2024-10-19 10:22:57.7584 API.Controllers.EmployeeItemsController Получил всех работников через GET
+2024-10-19 10:26:02.1914 API.Services.EmployeeService Работники получены
+2024-10-19 10:26:02.2040 API.Controllers.EmployeeItemsController Получил всех работников через GET
+2024-10-19 10:26:10.4806 API.Services.EmployeeService Работник получен
+2024-10-19 10:26:43.7104 API.Services.EmployeeService Работник 4 получен
+2024-10-19 10:27:09.1909 API.Services.EmployeeService Ошибка добавления записи в EmployeeService
+2024-10-19 10:27:28.6858 API.Services.EmployeeService Работник 5 создан
+2024-10-19 10:27:45.5842 API.Services.EmployeeService Работник 5 обновлен
+2024-10-19 10:27:51.6513 API.Services.EmployeeService Работник 5 получен
+2024-10-19 10:27:51.6712 API.Services.EmployeeService Работник 5 удален
+2024-10-19 10:30:47.2597 API.Services.EmployeeService Работники получены
+2024-10-19 10:30:47.2777 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-19 10:30:51.3939 API.Services.EmployeeService Работник 4 получен
+2024-10-19 10:30:51.3939 API.Controllers.EmployeeItemsController Получил работника 4 через GET запрос

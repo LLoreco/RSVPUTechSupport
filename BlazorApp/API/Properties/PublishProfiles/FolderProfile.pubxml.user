@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-10-22T10:31:30.7365521Z||;True|2024-10-18T14:18:50.0911940+05:00||;True|2024-10-17T18:36:25.8494498+05:00||;True|2024-10-17T18:35:18.6976872+05:00||;True|2024-10-17T18:21:50.9763331+05:00||;True|2024-10-17T17:59:54.5399020+05:00||;True|2024-10-17T16:51:12.5115558+05:00||;True|2024-10-17T16:23:43.5825505+05:00||;True|2024-10-16T14:12:13.8434697+05:00||;True|2024-10-16T14:12:02.7695198+05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

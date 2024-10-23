@@ -57,3 +57,4 @@ D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\obj\Release\net8.0\refint\API.dl
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\obj\Release\net8.0\API.pdb
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\obj\Release\net8.0\API.genruntimeconfig.cache
 D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\obj\Release\net8.0\ref\API.dll
+D:\BlazorExample\RSVPUTechSupport\BlazorApp\API\bin\Release\net8.0\nlog.config

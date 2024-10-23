@@ -1,28 +1,8 @@
 [
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "GetEmployees",
-    "RelativePath": "api/EmployeeItems",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Employee, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "API.Controllers.EmployeeItemsController",
     "Method": "PostEmployee",
-    "RelativePath": "api/EmployeeItems",
+    "RelativePath": "api/EmployeeItems/AddEmployee",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -47,8 +27,44 @@
   },
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "api/EmployeeItems/DeleteEmployee/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.EmployeeItemsController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/EmployeeItems/GetEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Employee, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.EmployeeItemsController",
     "Method": "GetEmployee",
-    "RelativePath": "api/EmployeeItems/{id}",
+    "RelativePath": "api/EmployeeItems/GetEmployee/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,7 +90,7 @@
   {
     "ContainingType": "API.Controllers.EmployeeItemsController",
     "Method": "PutEmployee",
-    "RelativePath": "api/EmployeeItems/{id}",
+    "RelativePath": "api/EmployeeItems/UpdateEmployee/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,9 +109,35 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.EmployeeItemsController",
-    "Method": "DeleteEmployee",
-    "RelativePath": "api/EmployeeItems/{id}",
+    "ContainingType": "API.Controllers.FAQController",
+    "Method": "PostFAQ",
+    "RelativePath": "api/FAQ/AddFAQ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "API.Data.FAQ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API.Data.FAQ",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.FAQController",
+    "Method": "DeleteFAQ",
+    "RelativePath": "api/FAQ/DeleteFAQ/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,16 +151,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "GetObjects",
-    "RelativePath": "api/ObjectItems",
+    "ContainingType": "API.Controllers.FAQController",
+    "Method": "GetFAQs",
+    "RelativePath": "api/FAQ/GetFAQ",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Objects, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.FAQ, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -129,9 +171,56 @@
     ]
   },
   {
+    "ContainingType": "API.Controllers.FAQController",
+    "Method": "GetFAQ",
+    "RelativePath": "api/FAQ/GetFAQ/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API.Data.FAQ",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.FAQController",
+    "Method": "PutFAQ",
+    "RelativePath": "api/FAQ/UpdateFAQ/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "item",
+        "Type": "API.Data.FAQ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.ObjectItemsController",
     "Method": "PostObject",
-    "RelativePath": "api/ObjectItems",
+    "RelativePath": "api/ObjectItems/AddObject",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -156,8 +245,44 @@
   },
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
+    "Method": "DeleteObject",
+    "RelativePath": "api/ObjectItems/DeleteObjects/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ObjectItemsController",
+    "Method": "GetObjects",
+    "RelativePath": "api/ObjectItems/GetObjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Objects, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.ObjectItemsController",
     "Method": "GetObject",
-    "RelativePath": "api/ObjectItems/{id}",
+    "RelativePath": "api/ObjectItems/GetObjects/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -183,7 +308,7 @@
   {
     "ContainingType": "API.Controllers.ObjectItemsController",
     "Method": "PutObject",
-    "RelativePath": "api/ObjectItems/{id}",
+    "RelativePath": "api/ObjectItems/UpdateObjects/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -202,45 +327,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.ObjectItemsController",
-    "Method": "DeleteObject",
-    "RelativePath": "api/ObjectItems/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.RecoveryHistoryController",
-    "Method": "GetRecoveryHistorys",
-    "RelativePath": "api/RecoveryHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.RecoveryHistory, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "API.Controllers.RecoveryHistoryController",
     "Method": "PostRecoveryHistory",
-    "RelativePath": "api/RecoveryHistory",
+    "RelativePath": "api/RecoveryHistory/AddRecoveryHistory",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -265,8 +354,44 @@
   },
   {
     "ContainingType": "API.Controllers.RecoveryHistoryController",
+    "Method": "DeteleRecoveryHistory",
+    "RelativePath": "api/RecoveryHistory/DeleteRecoveryHistory/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.RecoveryHistoryController",
+    "Method": "GetRecoveryHistorys",
+    "RelativePath": "api/RecoveryHistory/GetRecoveryHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.RecoveryHistory, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.RecoveryHistoryController",
     "Method": "GetRecoveryHistory",
-    "RelativePath": "api/RecoveryHistory/{id}",
+    "RelativePath": "api/RecoveryHistory/GetRecoveryHistory/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -292,7 +417,7 @@
   {
     "ContainingType": "API.Controllers.RecoveryHistoryController",
     "Method": "PutRecoveryHistory",
-    "RelativePath": "api/RecoveryHistory/{id}",
+    "RelativePath": "api/RecoveryHistory/UpdateRecoveryHistory/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -311,45 +436,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API.Controllers.RecoveryHistoryController",
-    "Method": "DeteleRecoveryHistory",
-    "RelativePath": "api/RecoveryHistory/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "GetWorks",
-    "RelativePath": "api/WorkItems",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Work, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "API.Controllers.WorkItemsController",
     "Method": "PostWork",
-    "RelativePath": "api/WorkItems",
+    "RelativePath": "api/WorkItems/AddWork",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -374,8 +463,44 @@
   },
   {
     "ContainingType": "API.Controllers.WorkItemsController",
+    "Method": "DeteleWork",
+    "RelativePath": "api/WorkItems/DeleteWork/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.WorkItemsController",
+    "Method": "GetWorks",
+    "RelativePath": "api/WorkItems/GetWork",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API.Data.Work, API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.WorkItemsController",
     "Method": "GetWork",
-    "RelativePath": "api/WorkItems/{id}",
+    "RelativePath": "api/WorkItems/GetWork/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -401,7 +526,7 @@
   {
     "ContainingType": "API.Controllers.WorkItemsController",
     "Method": "PutWork",
-    "RelativePath": "api/WorkItems/{id}",
+    "RelativePath": "api/WorkItems/UpdateWork/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -414,22 +539,6 @@
       {
         "Name": "item",
         "Type": "API.Data.Work",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.WorkItemsController",
-    "Method": "DeteleWork",
-    "RelativePath": "api/WorkItems/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

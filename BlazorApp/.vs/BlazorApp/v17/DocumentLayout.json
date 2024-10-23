@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\services\\objectsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\services\\objectsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\controllers\\objectitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\controllers\\objectitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\services\\recoveryhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\services\\recoveryhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\controllers\\employeeitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\controllers\\employeeitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\services\\workservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\services\\workservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\controllers\\recoveryhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\controllers\\recoveryhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\bin\\Release\\net8.0\\publish\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API\\bin\\Release\\net8.0\\publish\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\controllers\\workitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\controllers\\workitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\data\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\data\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|d:\\blazorexample\\rsvputechsupport\\blazorapp\\api\\interfaces\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BA205-E634-47BF-9244-468CD17693F9}|API\\API.csproj|solutionrelative:api\\interfaces\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,91 +39,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "API\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "API\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "API\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "API\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T11:51:31.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:24:24.855Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ObjectsService.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\ObjectsService.cs",
-              "RelativeDocumentMoniker": "API\\Services\\ObjectsService.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\ObjectsService.cs",
-              "RelativeToolTip": "API\\Services\\ObjectsService.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAmwGwAAAAHAAAAAAAAAA==",
+              "Title": "ObjectItemsController.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\ObjectItemsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ObjectItemsController.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\ObjectItemsController.cs",
+              "RelativeToolTip": "API\\Controllers\\ObjectItemsController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowBUAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T11:39:41.474Z",
+              "WhenOpened": "2024-10-22T11:45:38.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RecoveryHistoryService.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\RecoveryHistoryService.cs",
-              "RelativeDocumentMoniker": "API\\Services\\RecoveryHistoryService.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\RecoveryHistoryService.cs",
-              "RelativeToolTip": "API\\Services\\RecoveryHistoryService.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwFwAAAAIAAAAAAAAAA==",
+              "Title": "EmployeeItemsController.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\EmployeeItemsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\EmployeeItemsController.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\EmployeeItemsController.cs",
+              "RelativeToolTip": "API\\Controllers\\EmployeeItemsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T11:31:37.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Work.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Data\\Work.cs",
-              "RelativeDocumentMoniker": "API\\Data\\Work.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Data\\Work.cs",
-              "RelativeToolTip": "API\\Data\\Work.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T11:30:15.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkService.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\WorkService.cs",
-              "RelativeDocumentMoniker": "API\\Services\\WorkService.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Services\\WorkService.cs",
-              "RelativeToolTip": "API\\Services\\WorkService.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAqwAABAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:41:43.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T10:36:56.113Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\bin\\Release\\net8.0\\publish\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\bin\\Release\\net8.0\\publish\\appsettings.json",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\bin\\Release\\net8.0\\publish\\appsettings.json",
+              "RelativeToolTip": "API\\bin\\Release\\net8.0\\publish\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-22T10:32:04.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WorkItemsController.cs",
               "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\WorkItemsController.cs",
               "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\WorkItemsController.cs",
               "RelativeToolTip": "API\\Controllers\\WorkItemsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwHgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:41:47.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T09:45:56.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IWorkService.cs",
-              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
-              "RelativeDocumentMoniker": "API\\Interfaces\\IWorkService.cs",
-              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Interfaces\\IWorkService.cs",
-              "RelativeToolTip": "API\\Interfaces\\IWorkService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RecoveryHistoryController.cs",
+              "DocumentMoniker": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\RecoveryHistoryController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\RecoveryHistoryController.cs",
+              "ToolTip": "D:\\BlazorExample\\RSVPUTechSupport\\BlazorApp\\API\\Controllers\\RecoveryHistoryController.cs",
+              "RelativeToolTip": "API\\Controllers\\RecoveryHistoryController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:41:45.456Z"
+              "WhenOpened": "2024-10-22T08:40:08.592Z"
             }
           ]
         }

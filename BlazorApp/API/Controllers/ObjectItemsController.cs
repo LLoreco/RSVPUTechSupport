@@ -2,6 +2,9 @@
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NLog;
+using System.Data.Entity.Core.Objects;
+using System.Text.Json;
 
 namespace API.Controllers
 {
@@ -11,6 +14,7 @@ namespace API.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ObjectsService _objectService;
+        private readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public ObjectItemsController(ApplicationDbContext context)
         {
@@ -18,61 +22,137 @@ namespace API.Controllers
             _objectService = new ObjectsService(_context);
         }
 
-        // GET: api/ObjectItems
-        [HttpGet]
+        // GET: api/ObjectItems/GetObjects
+        [HttpGet("GetObjects")]
         public async Task<ActionResult<IEnumerable<Objects>>> GetObjects()
         {
-            var objects = _objectService.GetObjects().Result;
-            return Ok(objects);
+            try
+            {
+                var objects = _objectService.GetObjects().Result;
+                if (objects.Count > 0)
+                {
+                    _logger.Info("Получил все объекты через GET запрос");
+                    return Ok(JsonSerializer.Serialize(objects, new JsonSerializerOptions { WriteIndented = true }));
+                }
+                else
+                {
+                    return StatusCode(404, "Объекты не найдены");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Произошла ошибка при получении списка объектов.");
+                return StatusCode(500, "Произошла ошибка при получении списка объектов. Попробуйте позже.");
+            }
+
         }
 
-        // GET: api/ObjectItems/id
-        [HttpGet("{id}")]
+        // GET:  api/ObjectItems/GetObjects/id
+        [HttpGet("GetObjects/{id}")]
         public async Task<ActionResult<Objects>> GetObject(int id)
         {
-            var objects = await _objectService.GetObject(id);
-            return Ok(objects);
+            try
+            {
+                var objects = await _objectService.GetObject(id);
+                if (objects.IsSuccess)
+                {
+                    _logger.Info($"Получил объект {id} через GET запрос");
+                    return Ok(JsonSerializer.Serialize(objects));
+                }
+                else
+                {
+                    return StatusCode(404, "Объект не найден");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при получении объекта {id} ");
+                return StatusCode(500, $"Произошла ошибка при получении объекта {id}. Попробуйте позже.");
+            }
+
         }
 
-        // POST: api/ObjectItems
-        [HttpPost]
+        // POST: api/ObjectItems/AddObject
+        [HttpPost("AddObject")]
         public async Task<ActionResult<Objects>> PostObject(Objects item)
         {
-            var result = await _objectService.InsertRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                return CreatedAtAction(nameof(GetObject), new { id = item.id }, item);
+                var result = await _objectService.InsertRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Добавил объект {item.id} через POST запрос");
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Объект не добавлен");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return null;
+                _logger.Error(ex, $"Произошла ошибка при добавлении объекта {item.id} ");
+                return StatusCode(500, $"Произошла ошибка при добавлении объекта {item.id}. Попробуйте позже.");
             }
+           
         }
 
-        // PUT: api/ObjectItems/id
-        [HttpPut("{id}")]
+        // PUT: api/ObjectItems/UpdateObjects/id
+        [HttpPut("UpdateObjects/{id}")]
         public async Task<IActionResult> PutObject(int id, Objects item)
         {
-            var result = await _objectService.UpdateRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
+                var result = await _objectService.UpdateRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Обновил объект {item.id} через PUT запрос");
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Объект не найден");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при обновлении объекта {item.id} ");
+                return StatusCode(500, $"Произошла ошибка при обновлении объекта {item.id}. Попробуйте позже.");
             }
             
-            return NoContent();
         }
 
-        // DELETE: api/ObjectItems/id
-        [HttpDelete("{id}")]
+        // DELETE: api/ObjectItems/DeleteObjects/id
+        [HttpDelete("DeleteObjects/{id}")]
         public async Task<IActionResult> DeleteObject(int id)
         {
-            var objects = await _objectService.GetObject(id);
-            var result = await _objectService.DeleteRecord(objects.Result);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
+                var objectsResult = await _objectService.GetObject(id);
+                if (!objectsResult.IsSuccess)
+                {
+                    return StatusCode(404, "Сотрудник не найден.");
+                }
+                else
+                {
+                    var objects = objectsResult.Result;
+                    var result = await _objectService.DeleteRecord(objects);
+                    if (result.IsSuccess)
+                    {
+                        _logger.Info($"Удалил объект {id} через DELETE запрос");
+                        await _context.SaveChangesAsync();
+
+                        return Ok(JsonSerializer.Serialize(objects));
+                    }
+                    return StatusCode(500, $"Произошла ошибка при удалении объекта {id}.");
+                }
             }
-            return NoContent();
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при удалении объекта {id} ");
+                return StatusCode(500, $"Произошла ошибка при удалении объекта {id}. Попробуйте позже.");
+            }
         }
     }
 }

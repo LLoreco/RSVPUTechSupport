@@ -1,6 +1,8 @@
 ﻿using API.Data;
 using BlazorApp.Components.Services;
 using Microsoft.AspNetCore.Mvc;
+using NLog;
+using System.Text.Json;
 
 namespace API.Controllers
 {
@@ -10,6 +12,7 @@ namespace API.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly WorkService _workService;
+        private readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public WorkItemsController(ApplicationDbContext context)
         {
@@ -17,61 +20,133 @@ namespace API.Controllers
             _workService = new WorkService(_context);
         }
 
-        // GET: api/WorkItems
-        [HttpGet]
+        // GET: api/WorkItems/GetWork
+        [HttpGet("GetWork")]
         public async Task<ActionResult<IEnumerable<Work>>> GetWorks()
         {
-            var works = await _workService.GetWorks();
-            return Ok(works);
+            try
+            {
+                var works = await _workService.GetWorks();
+                if (works.Count > 0)
+                {
+                    _logger.Info("Получил всю работу через GET запрос");
+                    return Ok(JsonSerializer.Serialize(works));
+                }
+                else
+                {
+                    return StatusCode(404, "Работа не найдена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Произошла ошибка при получении списка работ.");
+                return StatusCode(500, "Произошла ошибка при получении списка работ. Попробуйте позже.");
+            }
         }
 
-        // GET: api/WorkItems/5
-        [HttpGet("{id}")]
+        // GET: api/WorkItems/GetWork/id
+        [HttpGet("GetWork/{id}")]
         public async Task<ActionResult<Work>> GetWork(int id)
         {
-            var work = await _workService.GetWork(id);
-            return Ok(work);
+            try
+            {
+                var work = await _workService.GetWork(id);
+                if (work.IsSuccess)
+                {
+                    _logger.Info($"Получил работу {id} через GET запрос");
+                    return Ok(JsonSerializer.Serialize(work));
+                }
+                else
+                {
+                    return StatusCode(404, "Работа не найдена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при получении работы {id}.");
+                return StatusCode(500, $"Произошла ошибка при получении работы {id}. Попробуйте позже.");
+            }
         }
 
-        // POST: api/WorkItems
-        [HttpPost]
+        // POST: api/WorkItems/AddWork
+        [HttpPost("AddWork")]
         public async Task<ActionResult<Work>> PostWork(Work item)
         {
-            var result = await _workService.InsertRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                return CreatedAtAction(nameof(GetWork), new { id = item.id }, item);
+                var result = await _workService.InsertRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Добавил работу {item.id} через POST запрос");
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Работа не добавлена.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return null;
+                _logger.Error(ex, $"Произошла ошибка при добавлении работы {item.id}.");
+                return StatusCode(500, $"Произошла ошибка при добавлении работы {item.id}. Попробуйте позже.");
             }
         }
 
-        // PUT: api/WorkItems/5
-        [HttpPut("{id}")]
+        // PUT: api/WorkItems/UpdateWork/id
+        [HttpPut("UpdateWork/{id}")]
         public async Task<IActionResult> PutWork(int id, Work item)
         {
-            var result = await _workService.UpdateRecord(item);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
+                var result = await _workService.UpdateRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Добавил работу {item.id} через PUT запрос");
+                    await _context.SaveChangesAsync();
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Работа не обновлена.");
+                }
             }
-            return NoContent();
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при обновлении работы {item.id}.");
+                return StatusCode(500, $"Произошла ошибка при обновлении работы {item.id}. Попробуйте позже.");
+            }
         }
 
-        // DELETE: api/WorkItems/5
-        [HttpDelete("{id}")]
+        // DELETE: api/WorkItems/DeleteWork/id
+        [HttpDelete("DeleteWork/{id}")]
         public async Task<IActionResult> DeteleWork(int id)
         {
-            var work = await _workService.GetWork(id);
-            var result = await _workService.DeleteRecord(work.Result);
-            if (result.IsSuccess)
+            try
             {
-                await _context.SaveChangesAsync();
-            }
+                var workResult = await _workService.GetWork(id);
 
-            return NoContent();
+                if (!workResult.IsSuccess)
+                {
+                    return StatusCode(404, "Работа не удалена.");
+                }
+                else
+                {
+                    var work = workResult.Result;
+                    var deleteResult = await _workService.DeleteRecord(work);
+                    if (deleteResult.IsSuccess)
+                    {
+                        _logger.Info($"Удалил работу {id} через DELETE запрос");
+                        await _context.SaveChangesAsync();
+                        return Ok(JsonSerializer.Serialize(work));
+                    }
+                    return StatusCode(500, $"Произошла ошибка при удалении работы {id}.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при удалении работы {id}.");
+                return StatusCode(500, $"Произошла ошибка при удалении работы {id}. Попробуйте позже.");
+            }
         }
 
         private bool TodoItemExists(int id)

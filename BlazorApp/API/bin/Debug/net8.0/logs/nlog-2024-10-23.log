@@ -1,0 +1,3 @@
+2024-10-23 14:04:02.1399 API.Services.EmployeeService Работники получены
+2024-10-23 14:04:02.1552 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-10-23 14:04:29.9695 API.Controllers.FAQController Получил всех FAQ через GET запрос

@@ -61,7 +61,7 @@ namespace BlazorApp.Components.Services
                     work.status = "Ожидаем подтверждения";
                     work.work_number = GetNextAvailableWorkNumber();
                     work.send_time = DateTime.UtcNow;
-                    work.time_limit = DateTime.SpecifyKind(work.time_limit, DateTimeKind.Utc);
+                    work.time_limit = work.time_limit.UtcDateTime;
                     work.Employee = _dbContext.employees.FirstOrDefault(e => e.id == work.employee_id);
                     work.FromWhom = _dbContext.employees.FirstOrDefault(e => e.id == work.from_whom_id);
                 }
@@ -242,7 +242,7 @@ namespace BlazorApp.Components.Services
         private void ConvertTime(Work work)
         {
             work.send_time = DateTime.UtcNow + TimeSpan.FromHours(5);
-            work.time_limit = DateTime.SpecifyKind(work.time_limit, DateTimeKind.Utc);
+            work.time_limit = work.time_limit.UtcDateTime;
         }
         private void CreateRecordToRecoveryHistory(Work work)
         {
@@ -250,8 +250,8 @@ namespace BlazorApp.Components.Services
             history.id = work.id;
             history.description = work.description;
             history.employee_id = work.employee_id;
-            history.recovery_date = work.send_time;
-            history.total_time = work.total_time;
+            history.recovery_date = work.send_time.UtcDateTime;
+            history.total_time = work.total_time.UtcDateTime;
             history.object_id = work.object_id;
             var recoveryHistoryService = new RecoveryHistoryService(_dbContext);
             recoveryHistoryService.InsertRecord(history, true);

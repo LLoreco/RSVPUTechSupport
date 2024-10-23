@@ -13,9 +13,9 @@ namespace API.Data
         public int work_number { get; set; }
         public int from_whom_id { get; set; }
         public string description { get; set; }
-        public DateTime send_time { get; set; }
-        public DateTime time_limit { get; set; }
-        public DateTime total_time { get; set; }
+        public DateTimeOffset send_time { get; set; }
+        public DateTimeOffset time_limit { get; set; }
+        public DateTimeOffset total_time { get; set; }
         public string status { get; set; }
         public int employee_id { get; set; }
         public string image { get; set; }

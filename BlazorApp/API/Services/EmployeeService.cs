@@ -18,7 +18,9 @@ namespace API.Services
         {
             try
             {
-                return await _dbContext.employees.ToListAsync();
+                var employees = await _dbContext.employees.ToListAsync();
+                _logger.Info("Работники получены");
+                return employees;
             }
             catch (Exception ex)
             {
@@ -31,6 +33,7 @@ namespace API.Services
             try
             {
                 var employee = await _dbContext.employees.FindAsync(id);
+                _logger.Info($"Работник {id} получен");
                 return new TaskResult<Employee>
                 {
                     IsSuccess = true,
@@ -54,6 +57,7 @@ namespace API.Services
             {
                 _dbContext.employees.Add(employee);
                 await _dbContext.SaveChangesAsync();
+                _logger.Info($"Работник {employee.id} создан");
                 return new TaskResult<bool>
                 {
                     IsSuccess = true,
@@ -76,6 +80,7 @@ namespace API.Services
             try
             {
                 var employee = await _dbContext.employees.FindAsync(employeeID);
+                _logger.Info($"Работник {employee.id} создан");
                 return new TaskResult<Employee>
                 {
                     IsSuccess = true,
@@ -114,6 +119,7 @@ namespace API.Services
                     employeeRecordUpdate.password = employeeUpdate.password;
                     employeeRecordUpdate.login = employeeUpdate.login;
                     await _dbContext.SaveChangesAsync();
+                    _logger.Info("Работник {0} обновлен", employeeUpdate.id);
                 }
                 else
                 {
@@ -149,6 +155,7 @@ namespace API.Services
                 {
                     _dbContext.Remove(employeeRecordDelete);
                     await _dbContext.SaveChangesAsync();
+                    _logger.Info("Работник {0} удален", employeeDelete.id);
                 }
                 else
                 {

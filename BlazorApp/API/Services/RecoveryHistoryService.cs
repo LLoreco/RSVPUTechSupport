@@ -62,8 +62,8 @@ namespace API.Services
                     if (employee != null && work != null && objectDB != null)
                     {
                         recoveryHistory.description = work.description;
-                        recoveryHistory.total_time = DateTime.SpecifyKind(work.total_time, DateTimeKind.Utc);
-                        recoveryHistory.recovery_date = DateTime.SpecifyKind(work.send_time, DateTimeKind.Utc);
+                        recoveryHistory.total_time = work.time_limit.UtcDateTime;
+                        recoveryHistory.recovery_date = work.send_time.UtcDateTime;
 
                         recoveryHistory.employee_id = employee.id;
 
