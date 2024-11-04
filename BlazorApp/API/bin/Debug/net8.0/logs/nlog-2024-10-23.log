@@ -1,3 +1,30 @@
-2024-10-23 14:04:02.1399 API.Services.EmployeeService Работники получены
-2024-10-23 14:04:02.1552 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
-2024-10-23 14:04:29.9695 API.Controllers.FAQController Получил всех FAQ через GET запрос
+2024-10-23 16:46:18.3777 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-23 16:46:18.3891 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-23 16:47:27.7904 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-23 16:47:59.6190 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-23 16:48:01.8781 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-10-23 16:48:01.8781 API.Controllers.WorkItemsController Добавил работу 6457 через POST запрос
+2024-10-23 16:48:47.1541 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-23 16:48:47.3067 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-23 16:48:47.3785 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-10-23 16:48:47.3785 API.Controllers.WorkItemsController Добавил работу 876 через POST запрос
+2024-10-23 16:49:45.4123 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-23 16:49:45.4433 BlazorApp.Components.Services.WorkService Не удалось записать данные в таблицу WORK в WorkService
+2024-10-23 16:49:58.7808 BlazorApp.Components.Services.WorkService Работник найден
+2024-10-23 16:49:58.7808 BlazorApp.Components.Services.WorkService Запись обновлена
+2024-10-23 16:49:58.7808 API.Controllers.WorkItemsController Добавил работу 876 через PUT запрос
+2024-10-23 16:50:28.6905 BlazorApp.Components.Services.WorkService Запись удалена
+2024-10-23 16:50:28.6905 API.Controllers.WorkItemsController Удалил работу 876 через DELETE запрос
+2024-10-23 16:50:51.6749 API.Controllers.RecoveryHistoryController Получил всю историю починок через GET запрос
+2024-10-23 16:51:17.5632 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 345 через GET запрос
+2024-10-23 16:51:29.3511 API.Controllers.RecoveryHistoryController Получил всю историю починок по объекту 34567 через GET запрос
+2024-10-23 16:52:01.2037 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-10-23 16:52:01.2037 API.Controllers.RecoveryHistoryController Добавил историю починок объекта 345 через POST запрос
+2024-10-23 16:52:47.6528 API.Services.RecoveryHistoryService Запись обновлена
+2024-10-23 16:52:47.6568 API.Controllers.RecoveryHistoryController Обновил историю починок объекта 345 через PUT запрос
+2024-10-23 16:53:08.8389 API.Controllers.RecoveryHistoryController Удалил историю починок объекта 345 через PUT запрос
+2024-10-23 16:53:41.1481 API.Controllers.FAQController Получил всех FAQ через GET запрос
+2024-10-23 16:53:58.4099 API.Controllers.FAQController Получил FAQ 3 через GET запрос
+2024-10-23 16:54:17.9798 API.Controllers.FAQController Добавил FAQ 4 через POST запрос
+2024-10-23 16:54:37.9021 API.Controllers.FAQController обновлено FAQ 3 через PUT запрос
+2024-10-23 16:54:58.6969 API.Controllers.FAQController Удалено FAQ 4 через DELETE запрос
