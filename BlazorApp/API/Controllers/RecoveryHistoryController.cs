@@ -1,6 +1,7 @@
 ﻿using API.Data;
 using API.Services;
 using BlazorApp.Components.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using System.Text.Json;
@@ -22,6 +23,7 @@ namespace API.Controllers
         }
 
         // GET: api/RecoveryHistory/GetRecoveryHistory
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetRecoveryHistory")]
         public async Task<ActionResult<IEnumerable<RecoveryHistory>>> GetRecoveryHistorys()
         {
@@ -46,6 +48,7 @@ namespace API.Controllers
         }
 
         // GET: api/RecoveryHistory/GetRecoveryHistory/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetRecoveryHistory/{id}")]
         public async Task<ActionResult<RecoveryHistory>> GetRecoveryHistory(int id)
         {
@@ -70,6 +73,7 @@ namespace API.Controllers
         }
 
         // POST: api/RecoveryHistory/AddRecoveryHistory
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPost("AddRecoveryHistory")]
         public async Task<ActionResult<RecoveryHistory>> PostRecoveryHistory(RecoveryHistory item)
         {
@@ -95,6 +99,7 @@ namespace API.Controllers
         }
 
         // PUT: api/RecoveryHistory/UpdateRecoveryHistory/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPut("UpdateRecoveryHistory/{id}")]
         public async Task<IActionResult> PutRecoveryHistory(int id, RecoveryHistory item)
         {
@@ -121,6 +126,7 @@ namespace API.Controllers
         }
 
         // DELETE: api/RecoveryHistory/DeleteRecoveryHistory/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpDelete("DeleteRecoveryHistory/{id}")]
         public async Task<IActionResult> DeteleRecoveryHistory(int id)
         {

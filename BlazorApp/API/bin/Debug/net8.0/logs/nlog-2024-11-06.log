@@ -1,0 +1,13 @@
+2024-11-06 14:48:24.7417 API.Services.EmployeeService Работники получены
+2024-11-06 14:48:24.7544 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-11-06 14:54:38.0051 API.Services.EmployeeService Работники получены
+2024-11-06 14:54:38.0166 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-11-06 14:58:03.5756 API.Services.EmployeeService Работники получены
+2024-11-06 14:58:03.5756 API.Controllers.EmployeeItemsController Получил всех работников через GET запрос
+2024-11-06 15:02:59.4835 API.Controllers.FAQController Получил всех FAQ через GET запрос
+2024-11-06 15:03:29.7965 API.Controllers.WorkItemsController Получил всю работу через GET запрос
+2024-11-06 15:06:25.7121 API.Controllers.WorkItemsController Получил работу 3 через GET запрос
+2024-11-06 15:11:09.7895 BlazorApp.Components.Services.WorkService Работник найден
+2024-11-06 15:11:09.9825 API.Services.RecoveryHistoryService Создана новая запись и сохранена в таблицу RECOVERYHISTORY
+2024-11-06 15:11:10.0766 BlazorApp.Components.Services.WorkService Создана новая запись и сохранена в таблицу WORK
+2024-11-06 15:11:10.0766 API.Controllers.WorkItemsController Добавил работу 876656 через POST запрос

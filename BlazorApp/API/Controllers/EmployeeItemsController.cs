@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using API.Services;
 using NLog;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -22,6 +23,7 @@ namespace API.Controllers
         }
 
         // GET: api/EmployeeItems/GetEmployee
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetEmployee")]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
@@ -49,6 +51,7 @@ namespace API.Controllers
         }
 
         // GET: api/EmployeeItems/GetEmployee/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetEmployee/{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
@@ -76,6 +79,7 @@ namespace API.Controllers
         }
 
         // POST: api/EmployeeItems/AddEmployee
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPost("AddEmployee")]
         public async Task<ActionResult<Employee>> PostEmployee([FromBody] Employee item)
         {
@@ -100,6 +104,7 @@ namespace API.Controllers
         }
 
         // PUT: api/EmployeeItems/UpdateEmployee/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPut("UpdateEmployee/{id}")]
         public async Task<IActionResult> PutEmployee(int id, [FromBody] Employee item)
         {
@@ -127,6 +132,7 @@ namespace API.Controllers
         }
 
         // DELETE: api/EmployeeItems/DeleteEmployee/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpDelete("DeleteEmployee/{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {

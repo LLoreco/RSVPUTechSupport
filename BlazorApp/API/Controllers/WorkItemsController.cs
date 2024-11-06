@@ -1,5 +1,6 @@
 ﻿using API.Data;
 using BlazorApp.Components.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using System.Text.Json;
@@ -21,6 +22,7 @@ namespace API.Controllers
         }
 
         // GET: api/WorkItems/GetWork
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetWork")]
         public async Task<ActionResult<IEnumerable<Work>>> GetWorks()
         {
@@ -45,6 +47,7 @@ namespace API.Controllers
         }
 
         // GET: api/WorkItems/GetWork/id
+        [Authorize]
         [HttpGet("GetWork/{id}")]
         public async Task<ActionResult<Work>> GetWork(int id)
         {
@@ -69,6 +72,7 @@ namespace API.Controllers
         }
 
         // POST: api/WorkItems/AddWork
+        [Authorize]
         [HttpPost("AddWork")]
         public async Task<ActionResult<Work>> PostWork(Work item)
         {
@@ -93,6 +97,7 @@ namespace API.Controllers
         }
 
         // PUT: api/WorkItems/UpdateWork/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPut("UpdateWork/{id}")]
         public async Task<IActionResult> PutWork(int id, Work item)
         {
@@ -118,6 +123,7 @@ namespace API.Controllers
         }
 
         // DELETE: api/WorkItems/DeleteWork/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpDelete("DeleteWork/{id}")]
         public async Task<IActionResult> DeteleWork(int id)
         {

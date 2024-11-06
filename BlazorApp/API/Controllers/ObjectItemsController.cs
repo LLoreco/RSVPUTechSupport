@@ -1,5 +1,6 @@
 ﻿using API.Data;
 using API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
@@ -23,6 +24,7 @@ namespace API.Controllers
         }
 
         // GET: api/ObjectItems/GetObjects
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetObjects")]
         public async Task<ActionResult<IEnumerable<Objects>>> GetObjects()
         {
@@ -48,6 +50,7 @@ namespace API.Controllers
         }
 
         // GET:  api/ObjectItems/GetObjects/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpGet("GetObjects/{id}")]
         public async Task<ActionResult<Objects>> GetObject(int id)
         {
@@ -73,6 +76,7 @@ namespace API.Controllers
         }
 
         // POST: api/ObjectItems/AddObject
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPost("AddObject")]
         public async Task<ActionResult<Objects>> PostObject(Objects item)
         {
@@ -98,6 +102,7 @@ namespace API.Controllers
         }
 
         // PUT: api/ObjectItems/UpdateObjects/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPut("UpdateObjects/{id}")]
         public async Task<IActionResult> PutObject(int id, Objects item)
         {
@@ -124,6 +129,7 @@ namespace API.Controllers
         }
 
         // DELETE: api/ObjectItems/DeleteObjects/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpDelete("DeleteObjects/{id}")]
         public async Task<IActionResult> DeleteObject(int id)
         {

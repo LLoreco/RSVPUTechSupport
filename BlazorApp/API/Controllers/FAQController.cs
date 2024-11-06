@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using API.Services;
 using NLog;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -22,6 +23,7 @@ namespace API.Controllers
         }
 
         // GET: api/FAQ/GetFAQ
+        [Authorize]
         [HttpGet("GetFAQ")]
         public async Task<ActionResult<IEnumerable<FAQ>>> GetFAQs()
         {
@@ -48,6 +50,7 @@ namespace API.Controllers
         }
 
         // GET: api/FAQ/GetFAQ/id
+        [Authorize]
         [HttpGet("GetFAQ/{id}")]
         public async Task<ActionResult<FAQ>> GetFAQ(int id)
         {
@@ -72,6 +75,7 @@ namespace API.Controllers
         }
 
         // POST: api/FAQ/AddFAQ
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPost("AddFAQ")]
         public async Task<ActionResult<FAQ>> PostFAQ(FAQ item)
         {
@@ -97,6 +101,7 @@ namespace API.Controllers
         }
 
         // PUT: api/FAQ/UpdateFAQ/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpPut("UpdateFAQ/{id}")]
         public async Task<IActionResult> PutFAQ(int id, FAQ item)
         {
@@ -122,6 +127,7 @@ namespace API.Controllers
         }
 
         // DELETE: api/FAQ/DeleteFAQ/id
+        [Authorize(Roles = "Admin,Manager")]
         [HttpDelete("DeleteFAQ/{id}")]
         public async Task<IActionResult> DeleteFAQ(int id)
         {
