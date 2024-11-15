@@ -35,7 +35,7 @@ namespace API.Controllers
                 {
                     _logger.Info("Получил всех работников через GET запрос");
 
-                    return Ok(JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true }));
+                    return Ok(JsonSerializer.Serialize(employees));
                 }
                 else
                 {
